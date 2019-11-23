@@ -725,7 +725,6 @@ focus_tree = {
 			add_ideas = USA_giant_sleeps_idea
 			add_political_power = 200
 			add_ideas = USA_neutrality_act 
-			add_war_support = -0.05
 			if = {
 				limit = {
 					has_war_support < 0.4
