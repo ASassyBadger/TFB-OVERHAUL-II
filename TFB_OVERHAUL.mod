@@ -10,4 +10,4 @@ tags={
 	"Ideologies"
 }
 name="TFB OVERHAUL"
-path="C:/Users/User/Documents/Paradox Interactive/Hearts of Iron IV/mod/TFB_OVERHAUL"
+path="C:\Users\Castle_Soda\Documents\Paradox Interactive\Hearts of Iron IV\mod\TFB_OVERHAUL"
