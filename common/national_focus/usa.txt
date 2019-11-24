@@ -600,7 +600,7 @@ focus_tree = {
 	focus = {
 		id = USA_office_of_strategic_services
 		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = USA_the_giant_wakes }
+		prerequisite = { focus = USA_wartime_industry }
 		available = {
 			
 		}
@@ -622,7 +622,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = USA_office_of_strategic_services}
 		available = { }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = USA_office_of_strategic_services
 		cost = 10
@@ -644,10 +644,10 @@ focus_tree = {
 	focus = {
 		id = USA_scientist_haven
 		icon = GFX_focus_research
-		prerequisite = { focus = USA_office_of_strategic_services }
-		x = 2
-		y = 0
-		relative_position_id = USA_black_chamber
+		prerequisite = { focus = USA_neutrality_act }
+		x = 1
+		y = 1
+		relative_position_id = USA_neutrality_act
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -664,11 +664,11 @@ focus_tree = {
 	focus = {
 		id = USA_manhattan_project
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = USA_scientist_haven focus = USA_black_chamber }
+		prerequisite = { focus = USA_black_chamber }
 		
-		x = -1
+		x = 0
 		y = 1
-		relative_position_id = USA_scientist_haven
+		relative_position_id = USA_black_chamber
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -1317,13 +1317,12 @@ focus_tree = {
 		relative_position_id = USA_the_giant_wakes
 		x = 2
 		y = 1
-		cost = 10 
+		cost = 5
 		available_if_capitulated = yes 
 		available = {
 			has_war = yes
 		}
 		completion_reward = {
-			add_ideas = USA_WPB
 			random_owned_controlled_state = {
 				prioritize = { 382 }
 					limit = {
