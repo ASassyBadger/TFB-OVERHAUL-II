@@ -1910,7 +1910,7 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
-				not = { has_idea = harry_white }
+			has_completed_focus = USA_the_giant_wakes
 			}
 			
 			traits = { financial_expert }
