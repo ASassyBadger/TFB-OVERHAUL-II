@@ -21,8 +21,8 @@ FRA = {
 	color_ui = rgb { 74 147 255 }
 }
 CFR = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 65 102 158 }
+	color_ui = rgb { 65 102 158 }
 }
 LUX = {
 	color = rgb { 65 175 179 }

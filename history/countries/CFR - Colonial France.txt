@@ -1,9 +1,21 @@
 capital = 772
 
+oob = "CFE_1936"
 
 set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.15
+
+create_country_leader = {
+	name = "Édouard Daladier"
+	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+	picture = "Portrait_France_Edouard_Daladier.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		stout_defender
+	}
+}
 
 # Starting tech
 set_technology = {
@@ -83,8 +95,8 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 69
-	fascism = 1
-	communism = 30
+	democratic = 100
+	fascism = 0
+	communism = 0
 }
 
