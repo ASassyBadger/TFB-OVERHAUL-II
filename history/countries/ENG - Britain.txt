@@ -39,6 +39,8 @@ set_technology = {
 	naval_bomber1 = 1
 	early_bomber = 1
 	CAS1 = 1
+	fighter1 = 1
+	marines = 1
 	
 	trench_warfare = 1
 
@@ -327,7 +329,9 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes ##suspended through duration of war, which is handled via event
 }
-set_popularities = {	democratic = 97	fascism = 2
+set_popularities = {
+	democratic = 97
+	fascism = 2
 	communism = 1
 }
 
