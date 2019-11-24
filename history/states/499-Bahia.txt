@@ -7,14 +7,12 @@ state={
 	state_category = large_town
 
 	history={
-		owner = BRA
+		#owner = BRA
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			air_base = 1
-			10946 = {
-				naval_base = 1
-			}
+			industrial_complex = 0
+			air_base = 0
+			
 		}
 		add_core_of = BRA
 		victory_points = {

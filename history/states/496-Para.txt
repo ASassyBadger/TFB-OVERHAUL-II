@@ -6,12 +6,9 @@ state={
 	
 	state_category = town
 	
-	resources={
-		steel=3 # was: 4
-	}
 
 	history={
-		owner = BRA
+		#owner = BRA
 		victory_points = {
 			7476 3
 		}
@@ -20,10 +17,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			10999 = {
-				naval_base = 1
-			}
+			industrial_complex = 0
+			
 		}
 		add_core_of = BRA
 	}

@@ -4037,37 +4037,9 @@ focus = {
 
 	### END SCANDINAVIAN BRANCH ###
 
-focus = {
-		id = We_Shall_Prevail
-		prerequisite = { focus = Stand_Firm }
-		icon = GFX_We_Shall_Prevail
-		x = 1
-		y = 1
-		relative_position_id = Stand_Firm
-		cost = 5
 
-		available_if_capitulated = yes
 
-		completion_reward = {
-			add_war_support = 0.10
-		}
-	}
 
-focus = {
-		id = No_Matter_The_Cost
-		prerequisite = { focus = Stand_Firm }
-		icon = GFX_No_Matter_The_Cost
-		x = -1
-		y = 1
-		relative_position_id = Stand_Firm
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_war_support = 0.10
-		}
-	}
 
 
 focus = {
