@@ -1,6 +1,6 @@
 ideas = {
 
-	Neutrality = {
+	Neutral_Nation = {
 			
 			allowed = {
 				always = no

@@ -9,7 +9,7 @@ add_ideas = {
 }
 
 add_ideas = {
-	Neutrality
+	Neutral_Nation
 }
 
 set_technology = {
