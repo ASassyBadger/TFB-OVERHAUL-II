@@ -1,242 +1,6 @@
 ideas = {
 
 	country = {
-
-		Fishing_Boats = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_air_bonus
-
-			removal_cost = -1
-			
-			equipment_bonus = {
-
-				convoy = {
-					build_cost_ic = -0.15 instant = yes
-				}
-			}
-		}
-
-
-		GER_Empire = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_air_bonus
-
-			removal_cost = -1
-
-			modifier = {
-				non_core_manpower = 0.15
-			}
-			
-
-		}
-
-
-		Afrika_Corps = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_air_bonus
-
-			removal_cost = -1
-
-			modifier = {
-				acclimatization_hot_climate_gain_factor = 0.1
-				supply_consumption_factor = -0.05
-			}
-			
-
-		}
-
-
-		Ger_Zeppelin = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_air_bonus
-
-			removal_cost = -1
-			
-			equipment_bonus = {
-
-				Carrier = {
-					build_cost_ic = -0.10 instant = yes
-				}
-			}
-		}
-
-
-		Ger_Dreadnought = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_air_bonus
-
-			removal_cost = -1
-			
-			equipment_bonus = {
-
-				battleship = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				sh_battleship = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-
-
-		Ger_Strenghen_Luftwaffe = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_air_bonus
-
-			removal_cost = -1
-			
-			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				CAS_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				nav_bomber_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-
-
-
-		Ger_Motorised = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			picture = generic_air_bonus
-
-			removal_cost = -1
-			
-			equipment_bonus = {
-
-				motorized_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-
-
-
-		Euro_Dom = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				industrial_capacity_factory = 0.05
-			}
-		}
-
-		Atlantic_Dom = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				industrial_capacity_dockyard = 0.10
-			}
-		}
-
-		GER_SS_2 = {
-		
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			picture = generic_disjointed_gov
-			
-			modifier = {
-				conscription = 0.01
-				}
-			}
-
-	
-		GER_SS = {
-		
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			picture = generic_disjointed_gov
-			
-			modifier = {
-				enemy_partisan_effect = -1.5
-				}
-			}
-			
 		sour_loser = {
 			
 			allowed = {
@@ -311,9 +75,6 @@ ideas = {
 				battlefield_support_tree = 0.10
 				jet_technology = 0.10
 			}
-			set_technology = {
-				fighter2 = 1
-			}
 
 		}	
 
@@ -328,7 +89,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				rocketry = 0.10
+				rocketry = 0.15
 			}
 
 			picture = generic_research_bonus
@@ -1857,12 +1618,14 @@ ideas = {
 		
 		hjalmar_schacht = {
 
+			cost = 75
 			
 			allowed = {
 				original_tag = GER
 			}
 			available = {
 				has_completed_focus = GER_four_year_plan
+				NOT = { has_completed_focus = GER_demand_sudetenland }
 			}
 			
 			traits = { captain_of_industry }
@@ -2060,6 +1823,101 @@ ideas = {
 			
 			traits = { smooth_talking_charmer }
 		}
+
+		GER_hans_oster = {
+
+			
+			allowed = {
+				original_tag = GER
+				has_dlc = "Waking the Tiger"
+			}
+
+			available = {
+				has_completed_focus = GER_oppose_hitler
+			}
+			
+			traits = { anti_fascist_agent }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		GER_alfred_hugenberg = {
+
+			
+			allowed = {
+				original_tag = GER
+				has_dlc = "Waking the Tiger"
+			}
+
+			available = {
+				has_completed_focus = GER_revive_the_kaiserreich
+			}
+			
+			traits = { monarchist_media_mogul }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		GER_carl_friedrich_goerdeler = {
+
+			
+			allowed = {
+				original_tag = GER
+				has_dlc = "Waking the Tiger"
+			}
+
+			available = {
+				has_completed_focus = GER_revive_the_kaiserreich
+			}
+			
+			traits = { economist }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		GER_julius_leber = {
+
+			
+			allowed = {
+				original_tag = GER
+				has_dlc = "Waking the Tiger"
+			}
+
+			available = {
+				has_completed_focus = GER_reestablish_free_elections
+			}
+			
+			traits = { connected_citizen }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		GER_theodor_heuss = {
+
+			
+			allowed = {
+				original_tag = GER
+				has_dlc = "Waking the Tiger"
+			}
+
+			available = {
+				has_completed_focus = GER_reestablish_free_elections
+			}
+			
+			traits = { liberal_journalist }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
 	}
 
 	
@@ -2079,12 +1937,11 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { porsche_tank_manufacturer }
+			traits = { heavy_tank_manufacturer }
 
 			ai_will_do = {
 				factor = 10
 			}
-			cost = 100
 
 		}
 		
@@ -2099,12 +1956,11 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { henschel_tank_manufacturer }
+			traits = { fast_tank_manufacturer }
 			
 			ai_will_do = {
 				factor = 1
 			}
-			cost = 100
 		}
 		
 		GER_MAN = {
@@ -2119,12 +1975,11 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { GER_MAN_tank_manufacturer }
+			traits = { medium_tank_manufacturer }
 
 			ai_will_do = {
 				factor = 1
 			}
-			cost = 100
 		}
 	}
 	
@@ -2148,7 +2003,6 @@ ideas = {
 			}
 			
 			traits = { atlantic_fleet_naval_manufacturer }
-			cost = 100
 			
 		}
 		
@@ -2168,7 +2022,6 @@ ideas = {
 			equipment_bonus = {
 				
 			}
-			cost = 100
 			
 		}	
 	}
@@ -2196,7 +2049,6 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-			cost = 100
 		}
 		
 		junkers = { 
@@ -2217,7 +2069,6 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-			cost = 100
 		}	
 		
 
@@ -2238,7 +2089,6 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-			cost = 100
 		}
 		
 		heinkel = {
@@ -2258,7 +2108,6 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-			cost = 100
 		}
 		
 		dornier = {
@@ -2277,7 +2126,6 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-			cost = 100
 		}	
 
 
@@ -2292,7 +2140,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.1
+				industry = 0.05
 				synth_resources = 0.15
 			}
 			
@@ -2353,7 +2201,6 @@ ideas = {
 			modifier = {
 				# +10% arty/at/aa research speed
 			}
-			cost = 100
 		}
 		
 		mauser = {
@@ -2372,7 +2219,6 @@ ideas = {
 			ai_will_do = {
 				factor = 2
 			}
-			cost = 100
 		}
 		
 		
@@ -2389,7 +2235,6 @@ ideas = {
 			}
 			
 			traits = { motorized_equipment_manufacturer }
-			cost = 100
 		}
 	}
 	
@@ -2429,7 +2274,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.1
+				land_doctrine = 0.10
 			}
 			
 			
@@ -2477,7 +2322,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.10
 			}
 			
 			traits = { air_warfare_theorist }
@@ -2491,7 +2336,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.1
+				air_doctrine = 0.10
 			}
 			
 			traits = { dive_bomber }
@@ -2521,7 +2366,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_doctrine = 0.1
+				naval_doctrine = 0.10
 			}
 			
 			traits = { naval_theorist }
