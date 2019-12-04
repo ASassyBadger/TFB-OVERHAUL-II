@@ -1,4 +1,8 @@
 ideas = {
+
+	
+
+	
 	political_advisor = {
 
 	LIT_vladas_jurgutis = {
