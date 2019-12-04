@@ -1,5 +1,24 @@
 ideas = {
 
+		Neutrality = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = 
+			modifier = {
+				drift_defence_factor = 2.0
+				enemy_justify_war_goal_time = 5.0
+				join_faction_tension = 2.00
+				#lend_lease_tension = 2.00
+				send_volunteers_tension = 2.00
+				guarantee_tension = 2.0
+				ai_badass_factor = 0.01    
+				ai_get_ally_desire_factor = -200
+				political_power_factor = -2.00
+				consumer_goods_factor = 1.00
+			}
+		}
+	
+
 	hidden_ideas = {
 
 		continuous_naval_production = {
