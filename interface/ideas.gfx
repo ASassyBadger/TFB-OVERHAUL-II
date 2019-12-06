@@ -11,6 +11,11 @@ spriteTypes = {
 	### new tfv nat spirit icons
 
 	spriteType = {
+		name = "GFX_idea_Neutral_Nation"
+		texturefile = "gfx/interface/ideas/Neutrality.dds"
+	}		
+
+	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"
 	}		

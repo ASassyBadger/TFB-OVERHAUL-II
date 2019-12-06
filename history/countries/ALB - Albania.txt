@@ -19,6 +19,10 @@ set_popularities = {
 	neutrality = 100
 }
 
+add_ideas = {
+	Neutrality
+}
+
 set_convoys = 5
 
 #Victor Emmanuel III of Italy after 39

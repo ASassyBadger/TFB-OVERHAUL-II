@@ -12,6 +12,10 @@ if = {
 set_research_slots = 3
 
 add_ideas = {
+	Neutrality
+}
+
+add_ideas = {
 	limited_conscription
 }
 
