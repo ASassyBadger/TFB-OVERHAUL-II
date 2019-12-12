@@ -158,5 +158,146 @@ focus_tree = {
 		}
 	}
 
-	
+	focus = {
+		id = CFR_Trade_Protection
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CFR_Homeland_Investment }
+        relative_position_id = CFR_Homeland_Investment
+        x = 4
+		y = 1
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = CFR_Naval_Infastructure
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CFR_Trade_Protection }
+        relative_position_id = CFR_Trade_Protection
+        x = -1
+		y = 1
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = CFR_Convoy_production
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CFR_Trade_Protection }
+        relative_position_id = CFR_Trade_Protection
+        x = 1
+		y = 1
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = CFR_Fishery_Protection
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CFR_Naval_Infastructure focus = CFR_Convoy_production }
+        relative_position_id = CFR_Naval_Infastructure
+        x = 1
+		y = 1
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = CFR_Colonial_Police
+		icon = GFX_goal_generic_national_unity
+        x = 2
+		y = 0
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = CFR_Local_Arms
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CFR_Colonial_Police }
+        relative_position_id = CFR_Colonial_Police
+        x = -2
+		y = 1
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = CFR_Specialist_equipment
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CFR_Colonial_Police }
+        relative_position_id = CFR_Colonial_Police
+        x = 2
+		y = 1
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = CFR_Motorisation
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CFR_Local_Arms focus = CFR_Specialist_equipment }
+        relative_position_id = CFR_Local_Arms
+        x = 2
+		y = 1
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = CFR_Brazzaville_Military_Academy
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CFR_Motorisation }
+        relative_position_id = CFR_Motorisation
+        x = 0
+		y = 1
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+		}
+	}
+
 }
