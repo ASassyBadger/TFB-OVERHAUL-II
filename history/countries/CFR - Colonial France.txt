@@ -17,6 +17,10 @@ create_country_leader = {
 	}
 }
 
+add_ideas = {
+	Shattered economy
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

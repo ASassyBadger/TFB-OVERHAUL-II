@@ -11,47 +11,6 @@ continuous_focus_palette = {
 	position = { x = 50 y = 1000 }
 	
 		
-	focus = {
-		id = continuous_naval_production
-		
-		icon = GFX_goal_continuous_naval_production
-		
-		available = {
-		}
-		
-		idea = continuous_naval_production
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		supports_ai_strategy = ai_focus_naval
-		
-		daily_cost = 1
-		
-		available_if_capitulated = yes
-	}
-
-	focus = {
-		id = continuous_air_production
-		
-		icon = GFX_goal_continuous_air_production
-		
-		available = {
-		}
-		
-		idea = continuous_air_production
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		supports_ai_strategy = ai_focus_aviation
-		
-		daily_cost = 1
-		
-		available_if_capitulated = yes
-	}
 	
 	focus = {
 		id = continuous_non_factory_construct
@@ -111,33 +70,6 @@ continuous_focus_palette = {
 		available_if_capitulated = yes
 	}
 
-	focus = {
-		id = continuous_suppression
-		
-		icon = GFX_goal_continuous_suppression
-		
-		available = {
-		}
-		
-		modifier = {
-			resistance_tick_auto = -2
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				
-				num_occupied_states < 1
-			}
-		}
-		
-		supports_ai_strategy = ai_focus_military_advancements
-		
-		daily_cost = 1
-		
-		available_if_capitulated = yes
-	}
 
 	focus = {
 		id = continuous_repair
@@ -213,57 +145,5 @@ continuous_focus_palette = {
 		available_if_capitulated = yes
 	}
 	
-	focus = {
-		id = continuous_boost_freedom
-		
-		icon = GFX_goal_continuous_boost_freedom
-		
-		available = {
-			hidden_trigger = { has_dlc = "Together for Victory" }
-			is_subject = yes			
-		}
-		
-		modifier = {
-			autonomy_gain = 0.5
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		supports_ai_strategy = ai_focus_military_advancements
-		
-		daily_cost = 1
-		
-		available_if_capitulated = yes
-	}
-
-	focus = {
-		id = continuous_restrict_freedom
-		
-		icon = GFX_goal_continuous_restrict_freedom
-		
-		available = {
-			hidden_trigger = { has_dlc = "Together for Victory" }
-		}
-
-		enable = {
-			num_subjects > 0
-		}
-
-		modifier = {
-			subjects_autonomy_gain = -0.5
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		supports_ai_strategy = ai_focus_military_advancements
-		
-		daily_cost = 1
-		
-		available_if_capitulated = yes
-	}
 
 }

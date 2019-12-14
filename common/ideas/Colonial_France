@@ -1,0 +1,25 @@
+ideas = {
+
+country = {
+		Shattered economy = {
+
+            picture = Neutral_Nationidea_usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+	}
+}

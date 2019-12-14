@@ -2,7 +2,98 @@ spriteTypes = {
 
 	#### Generic continuous goal icons
 
-	SpriteType = {
+SpriteType = {
+	name = "GFX_goal_generic_industry_fishing"
+	texturefile = "gfx/interface/goals/goal_generic_industry_fishing.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Nickel_Mines"
+	texturefile = "gfx/interface/goals/Nickel_Mines.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Standar_Living"
+	texturefile = "gfx/interface/goals/Standar_Living.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Agriculture_Boom"
+	texturefile = "gfx/interface/goals/Agriculture_Boom.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_FAFL"
+	texturefile = "gfx/interface/goals/FAFL.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Free_France_2"
+	texturefile = "gfx/interface/goals/Free_France_2.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Vive_France"
+	texturefile = "gfx/interface/goals/Vive_France.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_With_Britain"
+	texturefile = "gfx/interface/goals/With_Britain.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_French_Lifeboat"
+	texturefile = "gfx/interface/goals/French_Lifeboat.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Alone_Dark"
+	texturefile = "gfx/interface/goals/Alone_Dark.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Unthinkable"
+	texturefile = "gfx/interface/goals/Unthinkable.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Homeland_Investment"
+	texturefile = "gfx/interface/goals/Homeland_Investment.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Mission_Civilised"
+	texturefile = "gfx/interface/goals/Mission_Civilised.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Brazzaville"
+	texturefile = "gfx/interface/goals/Brazzaville.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_CFr_motorised"
+	texturefile = "gfx/interface/goals/CFr_motorised.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Specialist_Equipment"
+	texturefile = "gfx/interface/goals/Specialist_Equipment.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Local_Arms"
+	texturefile = "gfx/interface/goals/Local_Arms.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Colonial_Police"
+	texturefile = "gfx/interface/goals/Colonial_Police.dds"			
+	}
+
+
+SpriteType = {
 	name = "GFX_GER_AA"
 	texturefile = "gfx/interface/goals/GER_AA.dds"			
 	}

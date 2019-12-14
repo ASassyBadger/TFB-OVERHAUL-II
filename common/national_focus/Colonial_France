@@ -14,7 +14,7 @@ focus_tree = {
 
     focus = {
 		id =  CFR_mission_civilisatrice
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Mission_Civilised
 
 		x = 12
 		y = 0
@@ -26,13 +26,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 150
 		}
 	}
 
     focus = {
 		id = CFR_Homeland_Investment 
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Homeland_Investment
 		prerequisite = { focus = CFR_mission_civilisatrice }
         relative_position_id = CFR_mission_civilisatrice
 		x = 0
@@ -48,7 +48,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Industrial_Investment
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = CFR_Homeland_Investment }
         relative_position_id = CFR_Homeland_Investment
 		x = -4
@@ -64,7 +64,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Agricultural_Boom
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Agriculture_Boom
 		prerequisite = { focus = CFR_Industrial_Investment }
         relative_position_id = CFR_Industrial_Investment
 		x = 0
@@ -80,7 +80,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Develop_infastructure
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CFR_Industrial_Investment }
         relative_position_id = CFR_Industrial_Investment
 		x = -2
@@ -96,7 +96,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Develop_Nickel_Mines
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Nickel_Mines
 		prerequisite = { focus = CFR_Develop_infastructure }
         relative_position_id = CFR_Develop_infastructure
 		x = 0
@@ -112,7 +112,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Improved_Living
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Standar_Living
 		prerequisite = { focus = CFR_Agricultural_Boom focus = CFR_Develop_Nickel_Mines }
         relative_position_id = CFR_Agricultural_Boom
         x = -1
@@ -128,11 +128,11 @@ focus_tree = {
 
     focus = {
 		id = CFR_Unthinkable
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Unthinkable
 		prerequisite = { focus = CFR_Homeland_Investment }
         relative_position_id = CFR_Homeland_Investment
         x = 0
-		y = 1
+		y = 2
 		cost = 10
         
 		available_if_capitulated = yes
@@ -144,7 +144,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Free_France
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Free_France_2
 		prerequisite = { focus = CFR_Vive_la_France }
         relative_position_id = CFR_Vive_la_France
         x = 0
@@ -160,7 +160,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Trade_Protection
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = CFR_Homeland_Investment }
         relative_position_id = CFR_Homeland_Investment
         x = 4
@@ -176,7 +176,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Naval_Infastructure
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = CFR_Trade_Protection }
         relative_position_id = CFR_Trade_Protection
         x = -1
@@ -192,7 +192,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Convoy_production
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_continuous_naval_production
 		prerequisite = { focus = CFR_Trade_Protection }
         relative_position_id = CFR_Trade_Protection
         x = 1
@@ -208,7 +208,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Fishery_Protection
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_industry_fishing
 		prerequisite = { focus = CFR_Naval_Infastructure focus = CFR_Convoy_production }
         relative_position_id = CFR_Naval_Infastructure
         x = 1
@@ -224,7 +224,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Colonial_Police
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Colonial_Police
         x = 2
 		y = 0
 		cost = 10
@@ -238,7 +238,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Local_Arms
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Local_Arms
 		prerequisite = { focus = CFR_Colonial_Police }
         relative_position_id = CFR_Colonial_Police
         x = -2
@@ -254,7 +254,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Specialist_equipment
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Specialist_Equipment
 		prerequisite = { focus = CFR_Colonial_Police }
         relative_position_id = CFR_Colonial_Police
         x = 2
@@ -270,7 +270,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Motorisation
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_CFr_motorised
 		prerequisite = { focus = CFR_Local_Arms focus = CFR_Specialist_equipment }
         relative_position_id = CFR_Local_Arms
         x = 2
@@ -286,7 +286,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Brazzaville_Military_Academy
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Brazzaville
 		prerequisite = { focus = CFR_Motorisation }
         relative_position_id = CFR_Motorisation
         x = 0
@@ -302,7 +302,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Alone_In_Dark
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Alone_Dark
 		prerequisite = { focus = CFR_Unthinkable }
         relative_position_id = CFR_Unthinkable
         x = 0
@@ -318,7 +318,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Lifeboat_France
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_French_Lifeboat
 		prerequisite = { focus = CFR_Alone_In_Dark }
         relative_position_id = CFR_Alone_In_Dark
         x = -1
@@ -334,7 +334,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_With_Britain
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_With_Britain
 		prerequisite = { focus = CFR_Alone_In_Dark }
         relative_position_id = CFR_Alone_In_Dark
         x = 1
@@ -350,7 +350,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Vive_la_France
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Vive_France
 		prerequisite = { focus = CFR_With_Britain }
 		prerequisite = { focus = CFR_Lifeboat_France }
         relative_position_id = CFR_With_Britain
@@ -367,7 +367,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Wartime_Production
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus =  CFR_Free_France }
         relative_position_id =  CFR_Free_France
         x = 3
@@ -383,7 +383,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Homeland_Armament
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus =  CFR_Free_France }
         relative_position_id =  CFR_Free_France
         x = -3
@@ -399,7 +399,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_French_Scientists
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus =  CFR_Free_France }
         relative_position_id =  CFR_Free_France
         x = 0
@@ -415,7 +415,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Challenge_Panzer
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus =  CFR_Homeland_Armament }
         relative_position_id =  CFR_Homeland_Armament
         x = 0
@@ -431,7 +431,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_FAFL
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_FAFL
 		prerequisite = { focus =  CFR_Wartime_Production }
         relative_position_id =  CFR_Wartime_Production
         x = 1
@@ -447,7 +447,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Rapid_Production
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_production2
 		prerequisite = { focus =  CFR_Wartime_Production }
         relative_position_id =  CFR_Wartime_Production
         x = -2
