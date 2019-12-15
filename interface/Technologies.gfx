@@ -2501,7 +2501,17 @@ spriteTypes = {
 		name = "GFX_ENG_fighter3_medium"
 		texturefile = "gfx/interface/technologies/ENG_fighter3.dds"
 	}	
-	
+
+	SpriteType = {
+		name = "GFX_ENG_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/eng_fighter_jet_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/eng_fighter_jet_2.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_ENG_heavy_fighter1_medium"
 		texturefile = "gfx/interface/technologies/ENG_heavy_fighter1.dds"
