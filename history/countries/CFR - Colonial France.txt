@@ -18,11 +18,15 @@ create_country_leader = {
 }
 
 add_ideas = {
-	Shattered_economy
+	Stagnant_economy
 }
 
 add_ideas = {
 	Divided_People
+}
+
+add_ideas = {
+	Colonial_Garrison
 }
 
 # Starting tech
