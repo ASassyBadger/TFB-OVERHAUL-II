@@ -208,7 +208,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+				swap_ideas = {
+				remove_idea = divided_people
+				add_idea = Unified_people
+			}
 		}
 	}
 
@@ -256,7 +259,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+			navy_experience = 50
 		}
 	}
 
@@ -272,7 +280,54 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			773 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 8
+					instant_build = yes
+				}
+			}
+			772 = {
+				add_building_construction = {
+					type = naval_base
+					level = 8
+					instant_build = yes
+				}
+			}
+			780 = {
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			543 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			635 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			310 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -288,7 +343,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			539 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = Fishing_Boats
 		}
 	}
 
@@ -304,7 +367,19 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+			772 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -318,7 +393,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+		add_ideas =	Colonial_Conscription
+		add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -334,7 +414,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_ideas = french_arms_discount
+			772 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -350,7 +438,24 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				uses = 2
+				bonus = 1.0
+				category = support_tech
+			}
+			539 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -366,7 +471,23 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_tech_bonus = {
+				uses = 1
+				bonus = 1.0
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				name = mech_army_bonus
+				technology = basic_medium_tank
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				name = mech_army_bonus
+				technology = basic_heavy_tank
+			}
 		}
 	}
 
@@ -382,7 +503,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_research_slot = 1
+			army_experience = 100
+			swap_ideas = {
+				remove_idea = Colonial_Garrison
+				add_idea = Trained_Strength
+			}
 		}
 	}
 

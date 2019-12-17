@@ -45,6 +45,53 @@ country = {
 			}
 		}
 
+		Divided_People = {
+
+            picture = Neutral_Nationidea_usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.5
+				political_power_factor = -0.25
+				stability_factor = -0.40
+			}
+		}
+
+		Unified_people = {
+
+            picture = Neutral_Nationidea_usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.20
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
 		Recovering_economy = {
 
             picture = Neutral_Nationidea_usa_great_depression_3
@@ -132,6 +179,74 @@ country = {
 			modifier = {
 				army_attack_factor = -0.5
 				army_defence_factor = -0.5
+			}
+		}
+
+		Trained_Strength = {
+
+            picture = Neutral_Nationidea_usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				acclimatization_hot_climate_gain_factor = 0.20
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		Colonial_Conscription = {
+
+            picture = Neutral_Nationidea_usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription = 0.005
+			}
+		}
+
+		french_arms_discount = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
 			}
 		}
 	}

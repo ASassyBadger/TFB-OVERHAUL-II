@@ -302,13 +302,14 @@ focus = {
 				bonus = 1
 				uses = 1
 				category = infantry_weapons
-				add_tech_bonus = {
+			}
+			add_tech_bonus = {
 				name = USA_support_rock_island
 				uses = 1
 				bonus = 1.0
 				category = support_tech
 			}
-			}
+			
 		}
 	}
 
@@ -493,7 +494,6 @@ focus = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = USA_armored_infantry
 				uses = 1
 				bonus = 1.0
 				category = motorized_equipment
