@@ -2503,6 +2503,26 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
+		name = "GFX_ENG_cv_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/ENG_early_fighter_cv.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_cv_fighter1_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter1_cv.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_cv_fighter2_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter2_cv.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_cv_fighter3_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter3_cv.dds"
+	}	
+
+	SpriteType = {
 		name = "GFX_ENG_jet_fighter1_medium"
 		texturefile = "gfx/interface/technologies/eng_fighter_jet_1.dds"
 	}
