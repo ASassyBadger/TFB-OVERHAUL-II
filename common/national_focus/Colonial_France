@@ -227,7 +227,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_war_support = 0.10
 		}
 	}
 
@@ -524,7 +524,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			swap_ideas = {
+				remove_idea = Unified_people
+				add_idea = One_People
+			}
 		}
 	}
 
@@ -540,7 +543,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_equipment_to_stockpile = {
+   	 		type = infantry_equipment
+   		 	amount = 5000
+    		producer = FRA
+			}
 		}
 	}
 

@@ -45,28 +45,7 @@ country = {
 			}
 		}
 
-		Divided_People = {
 
-            picture = Neutral_Nationidea_usa_great_depression_3
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				conscription_factor = -0.5
-				political_power_factor = -0.25
-				stability_factor = -0.40
-			}
-		}
 
 		Unified_people = {
 
@@ -89,6 +68,29 @@ country = {
 				political_power_factor = -0.10
 				stability_factor = -0.10
 				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		One_People = {
+
+            picture = Neutral_Nationidea_usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
 			}
 		}
 
