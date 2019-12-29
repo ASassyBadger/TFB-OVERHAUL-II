@@ -545,9 +545,29 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
    	 		type = infantry_equipment
-   		 	amount = 5000
+   		 	amount = 8000
     		producer = FRA
 			}
+
+			add_equipment_to_stockpile = {
+   	 		type = support_equipment
+   		 	amount = 2000
+    		producer = FRA
+			}
+
+			add_equipment_to_stockpile = {
+   	 		type = artillery_equipment
+   		 	amount = 3000
+    		producer = FRA
+			}
+
+			add_equipment_to_stockpile = {
+   	 		type = motorized_equipment
+   		 	amount = 1000
+    		producer = FRA
+			}
+
+			add_manpower = 100000
 		}
 	}
 
