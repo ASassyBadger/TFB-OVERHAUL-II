@@ -20,7 +20,7 @@ guiTypes = {
 			position = { x = 16 y = 18 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_LOAD_GAME"
-			buttonFont = "hoi_24header"
+			buttonFont = "TFBFont_0"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}

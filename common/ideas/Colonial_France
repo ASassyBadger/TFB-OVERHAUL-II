@@ -230,6 +230,28 @@ country = {
 			}
 		}
 
+		Free_French_Forces = {
+
+            picture = Neutral_Nationidea_usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.20
+				supply_consumption_factor = -0.05
+			}
+		}
+
 		Colonial_Conscription = {
 
             picture = Neutral_Nationidea_usa_great_depression_3
@@ -273,5 +295,28 @@ country = {
 				}
 			}
 		}
+		Rapid_Production = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+			production_factory_efficiency_gain_factor = 0.15
+			fuel_gain_factor = 0.2
+
+			}
+		}
+	
 	}
 }

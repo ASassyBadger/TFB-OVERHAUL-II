@@ -35,6 +35,13 @@ guiTypes = {
 			spriteType = "GFX_frontend_game_logo"
 			position = { x= 20 y = 20 }
 		}
+
+		iconType =
+		{
+			name ="TFB_logo"
+			spriteType = "GFX_TFB_logo"
+			position = { x= 830 y = 15 }
+		}
 		
 	}
 
@@ -75,8 +82,25 @@ guiTypes = {
 		{
 			name ="frontend_dev_logo"
 			spriteType = "GFX_frontend_dev_logo"
-			position = { x= 15 y = 15 }
+			position = { x= -15 y = 15 }
 		}
+
+		iconType =
+		{
+			name ="Discord_Join"
+			spriteType = "GFX_Discord_Join"
+			position = { x= -400 y = 700 }
+		}
+
+		ButtonType = {
+			name = "Discord"
+			position = { x = -156 y = 915 }
+			quadTextureSprite ="Discord"
+			#clicksound = click_default
+			pdx_tooltip = "MENU_DISCORD"
+			web_link = "https://www.taskforcebravo.co.uk/discord"
+		}
+
 		
 		iconType =
 		{
@@ -104,8 +128,8 @@ guiTypes = {
 			name = "sp_continue_button"
 			position = { x = 16 y = 18 }
 			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "FE_CONTINUE"
-			buttonFont = "hoi_24header"
+			buttonText = "C O N T I N U E"
+			buttonFont = "TFBFont_1"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -147,7 +171,7 @@ guiTypes = {
 			position = { x = 16 y = 58 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_NEW"
-			buttonFont = "hoi_24header"
+			buttonFont = "TFBFont_1"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -157,7 +181,7 @@ guiTypes = {
 			position = {  x = 16 y = 98 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "MENU_BAR_LOAD"
-			buttonFont = "hoi_24header"
+			buttonFont = "TFBFont_1"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -167,7 +191,7 @@ guiTypes = {
 			position = { x = 16 y = 138}
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_TUTORIAL"
-			buttonFont = "hoi_24header"
+			buttonFont = "TFBFont_1"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -177,7 +201,7 @@ guiTypes = {
 			position = { x = 16 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "BACK"
-			buttonFont = "hoi_24header"
+			buttonFont = "TFBFont_1"
 			clicksound = click_close
 			oversound = ui_menu_over
 			shortcut = "ESCAPE"
@@ -201,8 +225,8 @@ guiTypes = {
 			name = "single_player_button"
 			position = { x = 16 y = 18 }
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
-			text = "FE_SINGLE_PLAYER"				
+			font = "TFBFont_1"			
+			text = "S I N G L E   P L A Y E R"				
 			clicksound = click_default			
 			oversound = ui_menu_over
 		}
@@ -211,8 +235,8 @@ guiTypes = {
 			name = "multi_player_button"
 			position = { x = 16 y = 58}
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
-			text = "FE_MULTI_PLAYER"			
+			font = "TFBFont_1"			
+			text = "M U L T I   P L A Y E R"			
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -235,8 +259,8 @@ guiTypes = {
 			name = "settings_button"
 			position = { x = 16 y = 98 }
 			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "OPTIONS"
-			buttonFont = "hoi_24header"
+			buttonText = "S E T T I N G S "
+			buttonFont = "TFBFont_1"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -246,8 +270,8 @@ guiTypes = {
 			name = "credits_button"
 			position = {  x = 16 y = 138 }
 			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "FE_CREDITS"
-			buttonFont = "hoi_24header"
+			buttonText = "C R E D I T S "
+			buttonFont = "TFBFont_1"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -256,8 +280,8 @@ guiTypes = {
 			name = "nudge_button"
 			position = { x = 16 y = 178 }
 			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "Nudge!"
-			buttonFont = "hoi_24header"
+			buttonText = "N U D G E !"
+			buttonFont = "TFBFont_1"
 		}
 		
 
@@ -265,8 +289,8 @@ guiTypes = {
 			name = "exit_button"
 			position = { x = 16 y = 260 }
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
-			text = "FE_EXIT"			
+			font = "TFBFont_1"			
+			text = "E X I T"			
 			clicksound = click_default
 			oversound = ui_menu_over
 			

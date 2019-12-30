@@ -14,6 +14,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_Discord_Join"
+		texturefile = "gfx/interface/Discord_Join.dds"
+	}
+
+	spriteType = {
+		name = "GFX_TFB_logo"
+		texturefile = "gfx/interface/TFB_logo.dds"
+	}
+
+	spriteType = {
 		name = "GFX_frontend_dev_logo"
 		texturefile = "gfx/interface/pdx_dev_logo.dds"
 	}

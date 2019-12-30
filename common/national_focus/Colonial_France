@@ -14,8 +14,8 @@ focus_tree = {
 
     focus = {
 		id =  CFR_mission_civilisatrice
+		text = mission_civilisatrice
 		icon = GFX_Mission_Civilised
-
 		x = 12
 		y = 0
 		cost = 10
@@ -32,6 +32,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Homeland_Investment 
+		text = Homeland_Investment
 		icon = GFX_Homeland_Investment
 		prerequisite = { focus = CFR_mission_civilisatrice }
         relative_position_id = CFR_mission_civilisatrice
@@ -51,6 +52,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Industrial_Investment
+		text = Industrial_Investment
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = CFR_Homeland_Investment }
         relative_position_id = CFR_Homeland_Investment
@@ -81,6 +83,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Agricultural_Boom
+		text = Agricultural_Boom
 		icon = GFX_Agriculture_Boom
 		prerequisite = { focus = CFR_Industrial_Investment }
         relative_position_id = CFR_Industrial_Investment
@@ -108,6 +111,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Develop_infastructure
+		text = Develop_Colonial_Infastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CFR_Industrial_Investment }
         relative_position_id = CFR_Industrial_Investment
@@ -163,6 +167,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Develop_Nickel_Mines
+		text = Develop_Nickel_Mines
 		icon = GFX_Nickel_Mines
 		prerequisite = { focus = CFR_Develop_infastructure }
         relative_position_id = CFR_Develop_infastructure
@@ -198,6 +203,7 @@ focus_tree = {
 
     focus = {
 		id = CFR_Improved_Living
+		text = Improved_Living
 		icon = GFX_Standar_Living
 		prerequisite = { focus = CFR_Agricultural_Boom focus = CFR_Develop_Nickel_Mines }
         relative_position_id = CFR_Agricultural_Boom
@@ -217,6 +223,10 @@ focus_tree = {
 
     focus = {
 		id = CFR_Unthinkable
+		available = {
+		date > 1939.9.3
+		}
+		text = The_Unthinkable
 		icon = GFX_Unthinkable
 		prerequisite = { focus = CFR_Homeland_Investment }
         relative_position_id = CFR_Homeland_Investment
@@ -233,28 +243,41 @@ focus_tree = {
 
     focus = {
 		id = CFR_Free_France
+		text = Free_France
 		icon = GFX_Free_France_2
 		prerequisite = { focus = CFR_Vive_la_France }
         relative_position_id = CFR_Vive_la_France
         x = 0
 		y = 2
-		cost = 10
+		cost = 1.5
         
 		available_if_capitulated = yes
 
 		completion_reward = {
 			set_cosmetic_tag = FRA_FREE
+
+			create_country_leader = {
+				name = "Charles De Gaulle"
+				desc = "POLITICS_MICHAEL_I_DESC"
+				picture = Portrait_France_Charles_De_Gaulle			
+				expire = "1965.1.1"
+				ideology = socialism
+				traits = {
+				}
+			}
+
 		}
 	}
 
 	focus = {
 		id = CFR_Trade_Protection
+		text = Trade_Protection
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = CFR_Homeland_Investment }
         relative_position_id = CFR_Homeland_Investment
         x = 4
 		y = 1
-		cost = 10
+		cost = 5
         
 		available_if_capitulated = yes
 
@@ -270,12 +293,13 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Naval_Infastructure
+		text = Naval_Infastructure
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = CFR_Trade_Protection }
         relative_position_id = CFR_Trade_Protection
         x = -1
 		y = 1
-		cost = 10
+		cost = 5
         
 		available_if_capitulated = yes
 
@@ -333,6 +357,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Convoy_production
+		text = Convoy_Production
 		icon = GFX_goal_continuous_naval_production
 		prerequisite = { focus = CFR_Trade_Protection }
         relative_position_id = CFR_Trade_Protection
@@ -357,6 +382,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Fishery_Protection
+		text = Fishery_Protection
 		icon = GFX_goal_generic_industry_fishing
 		prerequisite = { focus = CFR_Naval_Infastructure focus = CFR_Convoy_production }
         relative_position_id = CFR_Naval_Infastructure
@@ -385,6 +411,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Colonial_Police
+		text = Colonial_Police
 		icon = GFX_Colonial_Police
         x = 2
 		y = 0
@@ -404,6 +431,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Local_Arms
+		text = Local_Arms
 		icon = GFX_Local_Arms
 		prerequisite = { focus = CFR_Colonial_Police }
         relative_position_id = CFR_Colonial_Police
@@ -428,6 +456,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Specialist_equipment
+		text = Specialist_Equipment
 		icon = GFX_Specialist_Equipment
 		prerequisite = { focus = CFR_Colonial_Police }
         relative_position_id = CFR_Colonial_Police
@@ -461,6 +490,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Motorisation
+		text = Motorisation
 		icon = GFX_CFr_motorised
 		prerequisite = { focus = CFR_Local_Arms focus = CFR_Specialist_equipment }
         relative_position_id = CFR_Local_Arms
@@ -480,19 +510,20 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				name = mech_army_bonus
-				technology = basic_medium_tank
+				technology = basic_light_tank
 			}
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
 				name = mech_army_bonus
-				technology = basic_heavy_tank
+				technology = improved_light_tank
 			}
 		}
 	}
 
 	focus = {
 		id = CFR_Brazzaville_Military_Academy
+		text = Brazzaville_Military_Academy
 		icon = GFX_Brazzaville
 		prerequisite = { focus = CFR_Motorisation }
         relative_position_id = CFR_Motorisation
@@ -514,6 +545,10 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Alone_In_Dark
+		available = {
+			FRA = { has_capitulated = yes }
+		}
+		text = Alone_In_Dark
 		icon = GFX_Alone_Dark
 		prerequisite = { focus = CFR_Unthinkable }
         relative_position_id = CFR_Unthinkable
@@ -533,6 +568,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Lifeboat_France
+		text = Lifeboat_France
 		icon = GFX_French_Lifeboat
 		prerequisite = { focus = CFR_Alone_In_Dark }
         relative_position_id = CFR_Alone_In_Dark
@@ -573,6 +609,7 @@ focus_tree = {
 
 	focus = {
 		id = CFR_With_Britain
+		text = With_Britain
 		icon = GFX_With_Britain
 		prerequisite = { focus = CFR_Alone_In_Dark }
         relative_position_id = CFR_Alone_In_Dark
@@ -583,12 +620,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_research_slot = 1
 			ENG = { add_to_faction = CFR }
 		}
 	}
 
 	focus = {
 		id = CFR_Vive_la_France
+		text = Vive_La_France
 		icon = GFX_Vive_France
 		prerequisite = { focus = CFR_With_Britain }
 		prerequisite = { focus = CFR_Lifeboat_France }
@@ -604,11 +643,16 @@ focus_tree = {
 				remove_idea = growing_economy
 				add_idea = Stable_Economy
 			}
+			swap_ideas = {
+				remove_idea = Trained_Strength
+				add_idea = Free_French_Forces
+			}
 		}
 	}
 
 	focus = {
 		id = CFR_Wartime_Production
+		text = Wartime_Production
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus =  CFR_Free_France }
         relative_position_id =  CFR_Free_France
@@ -619,12 +663,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = arms_factory
+					level = 8
+					instant_build = yes
+				}
 		}
 	}
 
 	focus = {
 		id = CFR_Homeland_Armament
+		text = Homeland_Armament
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus =  CFR_Free_France }
         relative_position_id =  CFR_Free_France
@@ -635,12 +685,27 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
 		}
 	}
 
 	focus = {
 		id = CFR_French_Scientists
+		text = French_Scientists
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus =  CFR_Free_France }
         relative_position_id =  CFR_Free_France
@@ -651,12 +716,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_research_slot = 1
 		}
 	}
 
 	focus = {
 		id = CFR_Challenge_Panzer
+		text = Challenge_Panzer
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus =  CFR_Homeland_Armament }
         relative_position_id =  CFR_Homeland_Armament
@@ -667,12 +733,19 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_tech_bonus = {
+				bonus = 2
+				uses = 2
+				name = mech_army_bonus
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+			}
 		}
 	}
 
 	focus = {
 		id = CFR_FAFL
+		text = FAFL
 		icon = GFX_FAFL
 		prerequisite = { focus =  CFR_Wartime_Production }
         relative_position_id =  CFR_Wartime_Production
@@ -683,12 +756,23 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			set_technology = {
+				fighter2 = 1
+			}
+
+			air_experience = 100
+			add_tech_bonus = {
+				name = air_sup_bonus
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
 		}
 	}
 
 	focus = {
 		id = CFR_Rapid_Production
+		Text = Rapid_Production
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus =  CFR_Wartime_Production }
         relative_position_id =  CFR_Wartime_Production
@@ -699,7 +783,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			add_ideas = rapid_Production
 		}
 	}
 
