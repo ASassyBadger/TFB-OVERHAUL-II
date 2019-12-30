@@ -139,6 +139,28 @@ country = {
 			}
 		}
 
+		Stable_economy = {
+
+            picture = Neutral_Nationidea_usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				global_building_slots_factor = 0.15
+			}
+		}
+
 		Divided_People = {
 
             picture = Neutral_Nationidea_usa_great_depression_3

@@ -243,7 +243,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			set_cosmetic_tag = FRA_FREE
 		}
 	}
 
@@ -583,7 +583,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			ENG = { add_to_faction = CFR }
 		}
 	}
 
@@ -600,7 +600,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			swap_ideas = {
+				remove_idea = growing_economy
+				add_idea = Stable_Economy
+			}
 		}
 	}
 
