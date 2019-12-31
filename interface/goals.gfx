@@ -3,6 +3,11 @@ spriteTypes = {
 	#### Generic continuous goal icons
 
 SpriteType = {
+	name = "GFX_Regia_Marina"
+	texturefile = "gfx/interface/goals/Regia_Marina.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_goal_generic_industry_fishing"
 	texturefile = "gfx/interface/goals/goal_generic_industry_fishing.dds"			
 	}
