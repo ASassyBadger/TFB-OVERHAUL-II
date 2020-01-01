@@ -12,30 +12,30 @@ focus_tree = {
 
 	default = no
 
-focus = {
-		id = GER_Strenghen_Luftwaffe
-		icon = GFX_Ger_Fighter_Production
-		text = extra_tech_slot
-		prerequisite = { focus = GER_German_Empire }
-		x = 30
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = Ger_Strenghen_Luftwaffe
-		}
-	}
+#focus = {
+#		id = GER_Strenghen_Luftwaffe
+#		icon = GFX_Ger_Fighter_Production
+#		text = extra_tech_slot
+#		prerequisite = { focus = GER_German_Empire }
+#		x = 30
+#		y = 1
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_ideas = Ger_Strenghen_Luftwaffe
+#		}
+#	}
 
 
 focus = {
 		id = GER_Naval_Rearm_2
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		text = extra_tech_slot
+		text = Naval_Doctrine
 		prerequisite = { focus = GER_naval_rearmament_base }
 		x = 0
 		y = 1
@@ -60,7 +60,7 @@ focus = {
 	focus = {
 		id = GER_Naval_Rearm_3
 		icon = GFX_goal_generic_industry_fishing
-		text = extra_tech_slot
+		text = fishing_convoy
 		prerequisite = { focus = GER_Naval_Rearm_2}
 		x = 0
 		y = 1
@@ -105,7 +105,7 @@ focus = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = GER_Lebensraum }
 	
-		x = -14
+		x = -2
 		y = 1
 	    relative_position_id = GER_Lebensraum
 		cost = 5
@@ -191,29 +191,29 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = GER_atlantikwall
-		icon = GFX_focus_generic_coastal_fort
-		prerequisite = { focus = GER_German_Empire }
-		available = {
-			OR = {
-				FRA = { has_capitulated = yes }
-				NOT = { country_exists = FRA }
-			}
-		}
-		cancel_if_invalid = yes
-		x = 8
-		y = 2
-		relative_position_id = GER_German_Empire
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			add_ideas = GER_atlantikwall_idea
-		}
-	}
+#	focus = {
+#		id = GER_atlantikwall
+#		icon = GFX_focus_generic_coastal_fort
+#		prerequisite = { focus = GER_German_Empire }
+#		available = {
+#			OR = {
+#				FRA = { has_capitulated = yes }
+#				NOT = { country_exists = FRA }
+#			}
+#		}
+#		cancel_if_invalid = yes
+#		x = 8
+#		y = 2
+#		relative_position_id = GER_German_Empire
+#		cost = 5
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		completion_reward = {
+#			add_ideas = GER_atlantikwall_idea
+#		}
+#	}
 
 	focus = {
 		id = GER_ostwall
@@ -505,32 +505,30 @@ focus = {
 		}
 	}
 
-focus = {
-		id = GER_German_Empire
-		icon = GFX_New_German_Empire
-		mutually_exclusive = { focus = GER_Lebensraum}
-		text = GER_German_Empire
-		x = 18
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-		available = {
-		date > 1939.9.1
-	}
-}
+#focus = {
+#		id = GER_German_Empire
+#		icon = GFX_New_German_Empire
+#		mutually_exclusive = { focus = GER_Lebensraum}
+#		text = GER_German_Empire
+#		x = 18
+#		y = 0
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_research_slot = 1
+#		}
+#		available = {
+#		date > 1939.9.1
+#	}
+#}
 
 focus = {
 		id = GER_Lebensraum
 		text = GER_Lebensraum
 		icon = GFX_The_Greater_Reich
-		mutually_exclusive = { focus = GER_German_Empire}
-		x = 16
+		x = 3
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -556,7 +554,7 @@ focus = {
 		text = GER_Euro_Dom
 		prerequisite = { focus = GER_Lebensraum }
 		relative_position_id = GER_Lebensraum
-		x = -12
+		x = 0
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -589,14 +587,14 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = special_bonus
-				bonus = 3.0
-				uses = 3
-				technology = desertinfantry_at3
-				technology = desertinfantry_at2
-				technology = desertinfantry_at
-			}
+#			add_tech_bonus = {
+#				name = special_bonus
+#				bonus = 3.0
+#				uses = 3
+#				technology = desertinfantry_at3
+#				technology = desertinfantry_at2
+#				technology = desertinfantry_at
+#			}
 			add_ideas = Afrika_Corps
 		}
 	}
@@ -711,7 +709,7 @@ focus = {
 		icon = GFX_Waffen_SS
 		text = GER_Waffen_SS
 		prerequisite = { focus = GER_Lebensraum }
-		x = -9
+		x = 1
 		y = 2
 		relative_position_id = GER_Lebensraum
 		cost = 10
@@ -956,7 +954,11 @@ focus = {
 
 	focus = {
 		id = GER_long_range_escorts
-		icon = GFX_goal_generic_air_fighter
+		text = The_Focke_Wulf
+		available = {
+		date > 1938.2.1
+		}
+		icon = GFX_Focke_wulf
 		prerequisite = { focus = GER_tactical_air_effort focus = GER_strategic_air_effort }
 		x = -1
 		y = 1
@@ -1226,36 +1228,36 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = GER_rocketry_focus
-		icon = GFX_ME262
-		prerequisite = { focus = GER_Strenghen_Luftwaffe }
-		x = 0
-		y = 1
-		relative_position_id = GER_Strenghen_Luftwaffe
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = GER_rocketry_idea
-			add_tech_bonus = {
-				name = GER_rocketry_focus
-				bonus = 1
-				uses = 2
-				category = rocketry
-			}
-			add_tech_bonus = {
-				name = GER_rocketry_focus
-				bonus = 1
-				uses = 2
-				category = jet_technology
-			}
-		}
-	}
+#	focus = {
+#		id = GER_rocketry_focus
+#		icon = GFX_ME262
+#		prerequisite = { focus = GER_Strenghen_Luftwaffe }
+#		x = 0
+#		y = 1
+#		relative_position_id = GER_Strenghen_Luftwaffe
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_ideas = GER_rocketry_idea
+#			add_tech_bonus = {
+#				name = GER_rocketry_focus
+#				bonus = 1
+#				uses = 2
+#				category = rocketry
+#			}
+#			add_tech_bonus = {
+#				name = GER_rocketry_focus
+#				bonus = 1
+#				uses = 2
+#				category = jet_technology
+#			}
+#		}
+#	}
 
 	
 
@@ -1263,7 +1265,7 @@ focus = {
 		id = GER_rhineland
 		icon = GFX_Rhineland
 		x = 17
-		y = 1
+		y = 0
 		cost = 10
 		available = { is_puppet = no }
 		bypass = {
@@ -2430,10 +2432,11 @@ focus = {
 
 focus = {
 		id = GER_naval_rearmament_base
-		icon = GFX_Naval_Operations
-		prerequisite = { focus = GER_Rhineland }
+		text = Naval_Innovations
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_rhineland }
 		x = 3
-		y = 1
+		y = 2
 		relative_position_id = GER_rhineland
 		cost = 5
 		ai_will_do = {
@@ -2441,7 +2444,6 @@ focus = {
 		}
 
 		available_if_capitulated = yes
-		available = { has_completed_focus = GER_rhineland }
 
 		bypass = {
 			custom_trigger_tooltip =  {
@@ -2518,222 +2520,222 @@ focus = {
 	}
 
 
-	focus = {
-		id = GER_naval_rearmament
-		icon = GFX_focus_ger_revive_kaiserreich
-		text = GER_The_High_seas_fleet
-		prerequisite = { focus = GER_German_Empire }
-		x = 28
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
+#	focus = {
+#		id = GER_naval_rearmament
+#		icon = GFX_focus_ger_revive_kaiserreich
+#		text = GER_The_High_seas_fleet
+#		prerequisite = { focus = GER_German_Empire }
+#		x = 28
+#		y = 1
+#		cost = 5
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available_if_capitulated = yes
+#		available = { has_completed_focus = GER_rhineland }
+#
+#		completion_reward = {
+#			add_ideas = Atlantic_Dom
+#		}
+#	}
 
-		available_if_capitulated = yes
-		available = { has_completed_focus = GER_rhineland }
+#	focus = {
+#		id = Ger_Admiralty
+#		prerequisite = { focus = GER_naval_effort }
+#		relative_position_id = GER_naval_effort
+#		icon = GFX_Admiralty_Staff
+#		text = ITA_Mare_Nostrum_Two
+#		x = 2
+#		y = 1
+#		cost = 5
+#		ai_will_do = {
+#			factor = 5
+#		}
+##
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			
+#			add_tech_bonus = {
+#				name = naval_doctrine_bonus
+#				bonus = 1
+#				uses = 3
+#				category = naval_doctrine
+#			}
+#
+#			add_tech_bonus = {
+#				name = BB_bonus
+#				bonus = 1.0
+#				uses = 1
+#				category = BB_tech
+#			}
+#
+#			add_ideas = Ger_Dreadnought
+#		}
+#	}
+#
+#	focus = {
+#		id = GER_naval_effort
+#		text = naval_effort
+#		icon = GFX_Dreadnought_3
+#		prerequisite = { focus = GER_naval_rearmament }
+#		x = 0
+#		y = 2
+#		relative_position_id = GER_naval_rearmament
+#		cost = 5
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available_if_capitulated = yes
+#
+#		complete_tooltip = {
+#			every_state = {
+#				limit = { has_state_flag = GER_naval_effort_2dockyards }
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					type = dockyard
+#					level = 2
+#					instant_build = yes
+#				}
+#			}
+#			add_tech_bonus = {
+#				name = dd_bonus
+#				bonus = 1.0
+#				uses = 1
+#				category = dd_tech
+#			}
+#			add_tech_bonus = {
+#				name = cr_bonus
+#				bonus = 1.0
+#				uses = 1
+#				category = cl_tech
+#				category = ca_tech
+#			}
+#		}
+#
+#		completion_reward = {
+#			62 = {
+#				add_extra_state_shared_building_slots = 3
+#				add_building_construction = {
+#					type = dockyard
+#					level = 3
+#					instant_build = yes
+#				}
+#			}
+#			63 = {
+#				add_extra_state_shared_building_slots = 3
+#				add_building_construction = {
+#					type = dockyard
+#					level = 3
+#					instant_build = yes
+#				}
+#			}
+#			add_tech_bonus = {
+#				name = dd_bonus
+#				bonus = 1.0
+#				uses = 1
+#				category = dd_tech
+#			}
+#			add_tech_bonus = {
+#				name = cr_bonus
+#				bonus = 1.0
+#				uses = 1
+#				category = cl_tech
+#				category = ca_tech
+#			}
+#		}
+#	}
 
-		completion_reward = {
-			add_ideas = Atlantic_Dom
-		}
-	}
-
-	focus = {
-		id = Ger_Admiralty
-		prerequisite = { focus = GER_naval_effort }
-		relative_position_id = GER_naval_effort
-		icon = GFX_Admiralty_Staff
-		text = ITA_Mare_Nostrum_Two
-		x = 2
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-			add_tech_bonus = {
-				name = naval_doctrine_bonus
-				bonus = 1
-				uses = 3
-				category = naval_doctrine
-			}
-
-			add_tech_bonus = {
-				name = BB_bonus
-				bonus = 1.0
-				uses = 1
-				category = BB_tech
-			}
-
-			add_ideas = Ger_Dreadnought
-		}
-	}
-
-	focus = {
-		id = GER_naval_effort
-		text = naval_effort
-		icon = GFX_Dreadnought_3
-		prerequisite = { focus = GER_naval_rearmament }
-		x = 0
-		y = 2
-		relative_position_id = GER_naval_rearmament
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_naval_effort_2dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1.0
-				uses = 1
-				category = dd_tech
-			}
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.0
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-		}
-
-		completion_reward = {
-			62 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-			63 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1.0
-				uses = 1
-				category = dd_tech
-			}
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.0
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-		}
-	}
-
-	focus = {
-		id = Ger_Carrier_effort
-		icon = GFX_Zeppelin
-		text = ITA_Aquilla
-		prerequisite = { focus = GER_naval_effort }
-		relative_position_id = GER_naval_effort
-		x = -2
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = cv_bonus
-				bonus = 1
-				uses = 2
-				category = cv_tech
-			}
-			add_tech_bonus = {
-				name = con_def_bonus
-				bonus = 1.0
-				uses = 1
-				category = naval_doctrine
-			}
-
-			add_ideas = Ger_Zeppelin
-		}
-	}
-
-
-	focus = {
-		id = GER_naval_effort2
-		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = GER_naval_effort }
-		x = 0
-		y = 2
-		relative_position_id = GER_naval_effort
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
+#	focus = {
+#		id = Ger_Carrier_effort
+#		icon = GFX_Zeppelin
+#		text = ITA_Aquilla
+#		prerequisite = { focus = GER_naval_effort }
+#		relative_position_id = GER_naval_effort
+#		x = -2
+#		y = 1
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = cv_bonus
+#				bonus = 1
+#				uses = 2
+#				category = cv_tech
+#			}
+#			add_tech_bonus = {
+#				name = con_def_bonus
+#				bonus = 1.0
+#				uses = 1
+#				category = naval_doctrine
+#			}
+#
+#			add_ideas = Ger_Zeppelin
+#		}
+#	}
 
 
-
-			add_tech_bonus = {
-				name = Ger_amphibious_focus
-				bonus = 1.0
-				uses = 2
-				category = marine_tech
-			}
-			add_tech_bonus = {
-				name = GER_amphibious_focus
-				bonus = 1.0
-				uses = 2
-				category = tp_tech
-			}
-
-		}
-	}
+#	focus = {
+#		id = GER_naval_effort2
+#		icon = GFX_goal_generic_amphibious_assault
+#		prerequisite = { focus = GER_naval_effort }
+#		x = 0
+#		y = 2
+#		relative_position_id = GER_naval_effort
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#
+#
+#
+#			add_tech_bonus = {
+#				name = Ger_amphibious_focus
+#				bonus = 1.0
+#				uses = 2
+#				category = marine_tech
+#			}
+#			add_tech_bonus = {
+#				name = GER_amphibious_focus
+#				bonus = 1.0
+#				uses = 2
+#				category = tp_tech
+#			}
+#
+#		}
+#	}
 
 	
 
-	focus = {
-		id = GER_modular_construction
-		icon = GFX_An_Empire_Again
-		prerequisite = { focus = GER_naval_effort2 }
-		x = 0
-		y = 1
-		relative_position_id = GER_naval_effort2
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-			
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = GER_Empire
-		}
-	}
+#	focus = {
+#		id = GER_modular_construction
+#		icon = GFX_An_Empire_Again
+#		prerequisite = { focus = GER_naval_effort2 }
+#		x = 0
+#		y = 1
+#		relative_position_id = GER_naval_effort2
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#			
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_ideas = GER_Empire
+#		}
+#	}
 
 	focus = {
 		id = GER_improve_national_spirit
@@ -2795,7 +2797,7 @@ focus = {
 		x = 2
 		y = 1
 		relative_position_id = GER_Logistical_Reform
-		cost = 2
+		cost = 10
 		
 		bypass = {
 			custom_trigger_tooltip =  {
@@ -2818,9 +2820,9 @@ focus = {
 
 			add_tech_bonus = {
 				name = special_bonus
-				ahead_reduction = 5
+				ahead_reduction = 2
 				bonus = 1.0
-				uses = 6
+				uses = 4
 				technology = antiair1
 				technology = antiair2
 				technology = antiair3
