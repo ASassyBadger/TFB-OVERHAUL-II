@@ -15,6 +15,94 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1100 }
 
 	focus = {
+		id = ITA_Roman_Empire 
+		icon = GFX_Rome
+		text = ITA_Roman_Empire
+		prerequisite = { focus = ITA_victoryinETH }
+		relative_position_id = ITA_victoryinETH
+		available = {
+			ITA = {
+				controls_state = 103
+				controls_state = 105
+				controls_state = 44
+				controls_state = 185
+				controls_state = 184
+				controls_state = 732
+				controls_state = 47
+				controls_state = 186
+				controls_state = 452
+				controls_state = 447
+				controls_state = 446
+				controls_state = 453
+				controls_state = 454
+			}
+		}
+
+		x = 2
+		y = 1
+		cost = 0.15
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		 add_ideas = italian_new_roman_empire
+				
+		}
+	}
+
+	focus = {
+		id = ITA_relocate_refineries 
+		icon = GFX_Relocate_Refinery
+		text = ITA_Relocate_Refineries
+		prerequisite = { focus = ITA_prospect_for_oil }
+		relative_position_id = ITA_prospect_for_oil
+		available = {
+			ENG = {
+				controls_state = 662
+				controls_state = 448
+				controls_state = 661
+				controls_state = 449
+				controls_state = 663
+				controls_state = 450
+				controls_state = 451
+				controls_state = 788
+			}
+		}
+
+		x = 3
+		y = 1
+		cost = 1.5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				160 = {
+				add_resource = {
+					type = rubber
+					amount = 20
+				}
+				add_resource = {
+				type = oil
+				amount = 30
+			}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = ITA_ethiopian_war_logistics
 		icon = GFX_goal_generic_position_armies
 		x = 0
@@ -1331,8 +1419,10 @@ focus_tree = {
 	focus = {
 		id = ITA_light_ship_effort
 		icon = GFX_goal_generic_navy_cruiser
-		x = 11
-		y = 0
+		prerequisite = { focus = ITA_mare_nostrum }
+		x = 3
+		y = 1
+		relative_position_id = ITA_mare_nostrum
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1576,7 +1666,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 5
+		x = 4
 		y = 1
 		relative_position_id = ITA_victoryinETH
 		cost = 4.4

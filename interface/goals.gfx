@@ -3,6 +3,21 @@ spriteTypes = {
 	#### Generic continuous goal icons
 
 SpriteType = {
+	name = "GFX_National_Defence"
+	texturefile = "gfx/interface/goals/National_Defence.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Rome"
+	texturefile = "gfx/interface/goals/Rome.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Relocate_Refinery"
+	texturefile = "gfx/interface/goals/Relocate_Refinery.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_Regia_Marina"
 	texturefile = "gfx/interface/goals/Regia_Marina.dds"			
 	}
