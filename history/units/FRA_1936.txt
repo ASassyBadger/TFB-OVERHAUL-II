@@ -868,33 +868,12 @@ units = {
 	}
 
 	# Troupes de Madagascar
-	division= {	
-		name = "Troupes de Madagascar"	
-		location = 5222
-		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_equipment_factor = 0.15
 
-	}
 
 
 	##### Far Seas Theatre ##### -- Dakar
-	division= {	
-		name = "Troupes de Sénégalais"
-		location = 4948
-		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_equipment_factor = 0.3
-
-	}
-	division= {	
-		name = "Troupes de Afrique Equatoriale Française"	
-		location = 5139
-		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_equipment_factor = 0.15
-
-	}
+	
+	
 
 
 	##### Indochina Theatre #####
