@@ -14,7 +14,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_continue_the_new_deal
-		icon = GFX_goal_government_icon
+		icon = GFX_New_Deal
 		x = 4
 		y = 0
 		offset = {
@@ -50,7 +50,8 @@ focus_tree = {
 
 	focus = {	
 		id = USA_finish_hoover_dam
-		icon = GFX_hoover_dam
+		text = Hoover_Dam
+		icon = GFX_Hoover_Dam
 		relative_position_id = USA_continue_the_new_deal
 		x = -3 
 		y = 0 
@@ -132,7 +133,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_fair_labour_standards_act
-		icon = GFX_goal_OTT_constitution
+		icon = GFX_Labor_Act
 		x = 0
 		y = 2
 		prerequisite = { focus = USA_agricultural_adjustment_act }
@@ -434,6 +435,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_operation_torch
+		text = Operation_Torch
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = USA_focus_on_europe }
 		relative_position_id = USA_focus_on_europe
@@ -474,6 +476,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_operation_husky
+		text = Operation_Husky
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = USA_operation_torch }
 		relative_position_id = USA_focus_on_europe
@@ -501,6 +504,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_operation_overlord
+		text = Operation_Overlord
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = USA_operation_torch }
 		relative_position_id = USA_focus_on_europe
@@ -566,6 +570,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_operation_downfall
+		text = Operation_Downfall
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = USA_focus_on_asia }
 		relative_position_id  = USA_focus_on_asia
@@ -779,7 +784,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_issue_war_bonds
-		icon = GFX_war_bonds_111
+		icon = GFX_War_Bonds
 		available = {
 			OR = {
 				has_war_with = GER
@@ -1312,7 +1317,8 @@ focus_tree = {
 
 	focus = {
 		id = USA_war_production_board
-		icon = GFX_goal_generic_annexation
+		text = War_Board
+		icon = GFX_War_Board
 		prerequisite = { focus = USA_the_giant_wakes }
 		relative_position_id = USA_the_giant_wakes
 		x = 2
@@ -1622,7 +1628,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_selective_training_act
-		icon = GFX_selective_service
+		icon = GFX_focus_generic_military_academy
 		x = -5
 		y = 1
 		prerequisite = { focus = USA_war_department }
@@ -2052,7 +2058,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_air_war_plans_division
-		icon = GFX_usa_airplanes
+		icon = GFX_Air_war_plans
 		x = 2
 		y = 1
 		cost = 10
@@ -2125,7 +2131,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_TAC
-		icon = GFX_Aerial_Fleet
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = USA_air_support }
 		x = 0
 		y = 2
@@ -2151,7 +2157,7 @@ focus_tree = {
 	focus = {
 		id = USA_CAS
 		text = CAS_effort
-		icon = GFX_little_bombs
+		icon = GFX_goal_poland_goal
 		prerequisite = { focus = USA_air_support }
 		x = -1
 		y = 1
@@ -2247,7 +2253,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_us_army_airforce
-		icon = GFX_us_air
+		icon = GFX_Army_Airforce
 		x = -1
 		y = 4
 		prerequisite = { focus = USA_TAC }

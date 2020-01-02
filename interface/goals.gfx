@@ -3,6 +3,41 @@ spriteTypes = {
 	#### Generic continuous goal icons
 
 SpriteType = {
+	name = "GFX_War_Bonds"
+	texturefile = "gfx/interface/goals/War_Bonds.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_War_Board"
+	texturefile = "gfx/interface/goals/War_Board.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_New_Deal"
+	texturefile = "gfx/interface/goals/New_Deal.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Labor_Act"
+	texturefile = "gfx/interface/goals/Labor_Act.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Hoover_Dam"
+	texturefile = "gfx/interface/goals/Hoover_Dam.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Army_Airforce"
+	texturefile = "gfx/interface/goals/Army_Airforce.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Air_war_plans"
+	texturefile = "gfx/interface/goals/Air_war_plans.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_Focke_wulf"
 	texturefile = "gfx/interface/goals/Focke_wulf.dds"			
 	}

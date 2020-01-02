@@ -1544,7 +1544,7 @@ focus_tree = {
 		id = POL_strengthen_the_polish_state
 		icon = GFX_goal_generic_demand_territory
 		
-		x = 29
+		x = 26
 		y = 0
 		cost = 10
 
@@ -1565,7 +1565,7 @@ focus_tree = {
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = POL_strengthen_the_polish_state }
 		
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = POL_strengthen_the_polish_state
 		cost = 10
@@ -1582,295 +1582,17 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = POL_polish_militarism
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = POL_strengthen_the_polish_state }
-		
-		x = -2
-		y = 1
-		relative_position_id = POL_strengthen_the_polish_state
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 20
-			add_ideas = POL_militarism_focus
-		}
-	}
-
-	focus = {
-		id = POL_polish_revanchism
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = POL_polish_militarism }
-		
-		x = -2
-		y = 1
-		relative_position_id = POL_polish_militarism
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = POL_polish_revanchism_focus
-			#grants a -10% PP cost to war goal justification
-		}
-	}
-
-	focus = {
-		id = POL_poland_first
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = POL_polish_militarism }
-		mutually_exclusive = { focus = POL_internationalism }
-
-		x = 0
-		y = 1
-		relative_position_id = POL_polish_militarism
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = indoctrination_focus
-			#Gains the Indoctrination Modifier
-		}
-	}
-
-	focus = {
-		id = POL_ideological_fanaticism
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = POL_poland_first }
-
-		x = -1
-		y = 1
-		relative_position_id = POL_poland_first
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = POL_ideological_fanaticism
-			#Same as in Generic Focus
-		}
-	}
-
-	focus = {
-		id = POL_the_between_the_seas_concept
-		icon = GFX_goal_anschluss
-		available = {
-			is_puppet = no
-			is_in_faction = no
-		}
-		prerequisite = { focus = POL_poland_first }
-		x = -3
-		y = 1
-		relative_position_id = POL_poland_first
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_idea = anti_soviet_pact
-			}
-		}
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			create_faction = miedzymorze_faction
-			hidden_effect = {
-				news_event = { hours = 6 id = news.214 }
-			}
-		}
-	}
-
-	focus = {
-		id = POL_treaty_with_lithuania
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = POL_the_between_the_seas_concept }
-
-		available = {
-			is_faction_leader = yes
-		}
-
-		bypass = {
-			OR = {
-				LIT = {
-					OR = {
-						is_subject = yes
-						exists = no 
-						AND = {
-							is_in_faction = yes
-							NOT = { is_in_faction_with = POL }
-						}
-					}
-				}
-				POL = {
-					owns_state = 188
-					owns_state = 189
-					owns_state = 11
-				}
-			}
-		}
-
-		x = 0
-		y = 1
-		relative_position_id = POL_the_between_the_seas_concept
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_opinion_modifier = { target = LIT modifier = POL_treaty_with_lithuania }
-			LIT = { 
-				add_opinion_modifier = { target = ROOT modifier = POL_treaty_with_lithuania } 
-			}
-			if = {
-				limit = {
-					LIT = {
-						is_in_faction = no
-					}
-				}
-				LIT = {
-					custom_effect_tooltip = POL_invite_to_faction_tooltip
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						LIT = {
-							is_in_faction = no
-						}
-					}
-					LIT = {
-						country_event = { id = baltic.7 days = 1 }
-					}
-				}
-				#Adds one of those relation boost modifier to Lithuania
-			}
-		}
-	}
-
-	focus = {
-		id = POL_the_baltic_alliance
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = POL_treaty_with_lithuania }
-		available = {
-			OR = {
-				LAT = {
-					exists = yes
-					is_puppet = no
-					NOT = { has_war_with = POL }
-				}
-				EST = {
-					exists = yes
-					is_puppet = no
-					NOT = { has_war_with = POL }
-				}
-			}
-		}
-
-		x = 0
-		y = 1
-		relative_position_id = POL_treaty_with_lithuania
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_opinion_modifier = { 
-				target = EST modifier = POL_the_baltic_alliance 
-			}
-			EST = { 
-				add_opinion_modifier = { target = ROOT modifier = POL_the_baltic_alliance } 
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						EST = {
-							is_in_faction = no
-							is_puppet = no
-							NOT = { has_war_with = POL }
-						}
-					}
-					EST = {
-						country_event = { id = baltic.7 days = 1 }
-					}
-				}
-			}
-			add_opinion_modifier = { target = LAT modifier = POL_the_baltic_alliance }
-			LAT = { 
-				add_opinion_modifier = { target = ROOT modifier = POL_the_baltic_alliance }
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						LAT = {
-							is_in_faction = no
-							is_puppet = no
-							NOT = { has_war_with = POL }
-						}
-					}
-					LAT = {
-						country_event = { id = baltic.7 days = 1 }
-					}
-				}
-			}
-			#Adds the same thing to Estonia and Latvia
-			if = {
-				limit = {
-					EST = {
-						is_in_faction = no
-						is_puppet = no
-						NOT = { has_war_with = POL }
-					}
-				}
-				EST = {
-					custom_effect_tooltip = POL_invite_to_faction_tooltip
-				}
-			}
-			if = {
-				limit = {
-					LAT = {
-						is_in_faction = no
-						is_puppet = no
-						NOT = { has_war_with = POL }
-					}
-				}
-				LAT = {
-					custom_effect_tooltip = POL_invite_to_faction_tooltip
-				}
-			}
-		}
-	}
+	
 
 	focus = {
 		id = POL_internationalism
 		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = POL_polish_militarism focus = POL_defensive_focus }
+		prerequisite = { focus = POL_defensive_focus }
 		mutually_exclusive = { focus = POL_poland_first }
 
-		x = 2
+		x = 0
 		y = 1
-		relative_position_id = POL_polish_militarism
+		relative_position_id = POL_defensive_focus
 		cost = 10
 
 		ai_will_do = {
@@ -1885,201 +1607,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = POL_authoritarianism
-		icon = GFX_goal_molotov_ribbentrop_pact
-		prerequisite = { focus = POL_internationalism }
-		mutually_exclusive = { focus = POL_liberalism }
-
-		x = 1
-		y = 1
-		relative_position_id = POL_internationalism
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = POL_authoritarianism_focus
-				days = 720
-			}
-			#Reduction in Democratic Support
-		}
-	}
-
-	focus = {
-		id = POL_paramilitarism
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = POL_authoritarianism }
-
-		x = 1
-		y = 1
-		relative_position_id = POL_authoritarianism
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = paramilitarism_focus
-			#As Per Generic Focus
-		}
-	}
-
-	focus = {
-		id = POL_go_right
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = POL_authoritarianism }
-		mutually_exclusive = { focus = POL_go_left }
-
-		x = -1
-		y = 1
-		relative_position_id = POL_authoritarianism
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = fascist_influence
-				days = 720
-			}
-			#Increases Fascist Support
-		}
-	}
-
-	focus = {
-		id = POL_military_youth
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = POL_go_right }
-
-		x = 1
-		y = 2
-		relative_position_id = POL_go_right
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = military_youth_focus
-			#As per generic
-		}
-	}
-
-	focus = {
-		id = POL_seek_accommodation_with_germany
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = POL_go_right }
-		available = {
-			country_exists = GER
-			GER = { has_government = fascism }
-		}
-		
-		x = 0
-		y = 1
-		relative_position_id = POL_go_right
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_opinion_modifier = { target = GER modifier = POL_seek_accommodation_with_germany }
-			GER = { add_opinion_modifier = { target = ROOT modifier = POL_seek_accommodation_with_germany } }
-			#Relation Boost With Germany
-		}
-	}
-
-	focus = {
-		id = POL_go_left
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = POL_authoritarianism }
-		mutually_exclusive = { focus = POL_go_right }
-
-		x = -3
-		y = 1
-		relative_position_id = POL_authoritarianism
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = communist_influence
-				days = 720
-			}
-			#Increases Communist Support
-		}
-	}
-
-	focus = {
-		id = POL_political_commissars
-		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = POL_go_left }
-
-		x = -1
-		y = 2
-		relative_position_id = POL_go_left
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = political_commissars_focus
-			#as per generic focus
-		}
-	}
-
-	focus = {
-		id = POL_seek_accommodation_with_USSR
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = POL_go_left }
-		available = {
-			country_exists = SOV
-		}
-		x = 0
-		y = 1
-		relative_position_id = POL_go_left
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_opinion_modifier = { target = SOV modifier = POL_seek_accommodation_with_USSR }
-			SOV = { add_opinion_modifier = { target = ROOT modifier = POL_seek_accommodation_with_USSR } }
-			#Relation Boost with the USSR
-		}
-	}
+	
 
 	focus = {
 		id = POL_liberalism
@@ -2088,7 +1616,7 @@ focus_tree = {
 		prerequisite = { focus = POL_defensive_focus }
 		mutually_exclusive = { focus = POL_authoritarianism }
 
-		x = 3
+		x = 0
 		y = 1
 		relative_position_id = POL_internationalism
 		cost = 10
@@ -2113,7 +1641,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = POL_liberalism }
 
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = POL_liberalism
 		cost = 10
@@ -2139,7 +1667,7 @@ focus_tree = {
 			country_exists = ENG
 		}
 
-		x = 3
+		x = 1
 		y = 1
 		relative_position_id = POL_liberalism
 		cost = 10
