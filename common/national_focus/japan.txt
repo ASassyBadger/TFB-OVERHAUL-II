@@ -952,11 +952,10 @@ focus = {
 
 
 		completion_reward = {
-			SIA = { country_event = generic.5 }
-			add_ai_strategy = {
-				type = protect
-				id = "SIA"
-				value = 100
+			#SIA = { country_event = generic.5 }
+			#TFB Modpack
+			annex_country= {
+				target = SIA 
 			}
 		}
 	}
@@ -1662,38 +1661,7 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = JAP_strengthen_the_divine_wind
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = JAP_spiritual_mobilization }
-		prerequisite = { focus = JAP_warrior_spirit }
-		x = 1
-		y = 1
-		relative_position_id = JAP_spiritual_mobilization
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-			has_tech = rocket_engines
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
-			hidden_effect = { set_technology = { suicide_craft = 1 } }
-		}
-	}
+	
 
 	
 
