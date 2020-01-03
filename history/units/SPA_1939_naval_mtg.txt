@@ -33,15 +33,7 @@ units= {
 			ship = { name = "ARE Huesca" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Melilla Class" } } }
 			ship = { name = "ARE Teruel" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Melilla Class" } } }
 		}
-		task_force = {
-			name = "Grupo de Cádiz"
-			location = 1048  #Cádiz
-			# S103 Flotilla
-			ship = { name = "ARE B1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
-			ship = { name = "ARE B2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
-			ship = { name = "ARE B3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
-			ship = { name = "ARE B4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
-		}
+		
 	}
 
 	fleet = {

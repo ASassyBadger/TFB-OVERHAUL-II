@@ -7,17 +7,26 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
-		#recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-		#engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
-		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+		engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
 	}
 }
 
@@ -26,23 +35,30 @@ division_template = {
 	division_names_group = SOV_MNT_01
 
 	regiments = {
-		mountaineers = { x = 0 y = 0 }	
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 0 y = 0 } 												# (elite) Alpini Regiment
+		mountaineers = { x = 0 y = 1 } 
+		mountaineers = { x = 0 y = 2 } 
+		mountaineers = { x = 0 y = 3 } 
+		mountaineers = { x = 0 y = 4 } 
 		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }	
-		mountaineers = { x = 2 y = 1 }	
-		mountaineers = { x = 2 y = 2 }	
-		mountaineers = { x = 3 y = 0 }	
-		mountaineers = { x = 3 y = 1 }	
-		mountaineers = { x = 3 y = 2 }	
-	}
-	support = {
-		engineer = { x = 0 y = 0 } 		# Engineer bn
-		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 122mm bn
-	}
+		mountaineers = { x = 1 y = 1 } 												# (elite) Alpini Regiment
+		mountaineers = { x = 1 y = 2 } 
+		mountaineers = { x = 1 y = 3 } 
+		mountaineers = { x = 1 y = 4 } 
+		mountaineers = { x = 2 y = 0 } 
+		mountaineers = { x = 2 y = 1 } 
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+		} 
+	support = { 
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 } 
+		recon = { x = 0 y = 2 }
+	} 
 }
 
 division_template = {
@@ -140,7 +156,7 @@ units = {
 		location = 9203
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {	# "54ya Strelkovaya Diviziya"		
@@ -151,7 +167,7 @@ units = {
 		location = 142
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {	# "16ya Kavaleriyskaya Diviziya"		
@@ -162,7 +178,7 @@ units = {
 		location = 11181
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}
 
@@ -175,7 +191,7 @@ units = {
 		location = 3134
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 
@@ -191,7 +207,7 @@ units = {
 		location = 149
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {	# "56ya 'Moskva' Strelk. Div."		
@@ -202,7 +218,7 @@ units = {
 		location = 149
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {	# "72ya 'Turkestan.' Gornostrelk. Div."		
@@ -213,7 +229,7 @@ units = {
 		location = 3151
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}
 	division= {			
@@ -221,8 +237,7 @@ units = {
 		location = 3151
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
-
+		start_equipment_factor = 1.0
 	}
 
 	### Leningraskaya Gruppa Armiya (Leningrad Army Group) -- Leningrad ###
@@ -236,7 +251,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}			
 	division= {	# "4ya NKVD Pogranichnaya Diviziya"		
@@ -248,7 +263,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1.0
 
 	}			
 	division= {			
@@ -276,7 +291,7 @@ units = {
 		location = 104
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {	# "29ya  'Vyatskaya' Strelk. Div."		
@@ -287,7 +302,7 @@ units = {
 		location = 9408
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {	# "33ya 'Belorusskaya' Strelk. Div."		
@@ -298,7 +313,7 @@ units = {
 		location = 9120
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {			
@@ -306,7 +321,7 @@ units = {
 		location = 126
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}
 
@@ -319,7 +334,7 @@ units = {
 		location = 415
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {	# "48ya 'Kashino-Tver.' Strelk. Div."		
@@ -330,7 +345,7 @@ units = {
 		location = 3310
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {	# "64ya Strelkovaya Diviziya"		
@@ -341,7 +356,7 @@ units = {
 		location = 3333
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {			
@@ -349,7 +364,7 @@ units = {
 		location = 11202
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}
 
@@ -362,7 +377,7 @@ units = {
 		location = 6293
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}
 	division= {	# "36ya 'Chongarskaya' Kav. Div."		
@@ -373,7 +388,7 @@ units = {
 		location = 6293
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}
 
@@ -386,7 +401,7 @@ units = {
 		location = 3219
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {	# "8ya 'Minskaya' Strelk. Div."		
@@ -397,7 +412,7 @@ units = {
 		location = 6371
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
+		start_equipment_factor = 1.0
 
 	}			
 	division= {	# "37ya Strelkovaya Diviziya"		
@@ -1792,29 +1807,29 @@ air_wings = {
 	# LVO Aviatsya Komandovaniya -- Leningrad
 	195 = { 
 		# 15ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "SOV" 
-			amount = 94
+			amount = 100
 		}
 		# 18ya Bombardirovochnye Aviabrigada
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1 =  {
 			owner = "SOV" 
-			amount = 60
+			amount = 100
 		}
 	}
 
 	# MVO Aviatsya Komandovaniya
 	219 = {
 		# 2ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "SOV" 
-			amount = 94
+			amount = 100
 		}
 		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
 		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
-		strat_bomber_equipment_1 =  {
+		tac_bomber_equipment_1 =  {
 			owner = "SOV" 
-			amount = 48
+			amount = 100
 		}
 		# TODO -- 46ya Transporta Aviabrigada -- transport planes
 	}
@@ -1824,17 +1839,17 @@ air_wings = {
 		# 8ya Istrebitel'nye Aviabrigada
 		fighter_equipment_1 = {
 			owner = "SOV" 
-			amount = 94
+			amount = 100
 		}
 		# 14ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "SOV" 
-			amount = 94
+			amount = 100
 		}
 		# 16ya Bombardirovochnye Aviabrigada
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1 =  {
 			owner = "SOV" 
-			amount = 60
+			amount = 100
 		}
 	}
 
@@ -1843,13 +1858,13 @@ air_wings = {
 		# 17ya Istrebitel'nye Aviabrigada
 		fighter_equipment_1 = {
 			owner = "SOV" 
-			amount = 94
+			amount = 100
 		}
 		# 1ya Bombardirovochnye Aviabrigada
 		# 10ya Bombardirovochnye Aviabrigada
-		tac_bomber_equipment_0 =  {
+		tac_bomber_equipment_1 =  {
 			owner = "SOV" 
-			amount = 120
+			amount = 100
 		}
 	}
 
@@ -1857,14 +1872,14 @@ air_wings = {
 	408 = {
 		# 12ya Istrebitel'nye Aviabrigada
 		# 20ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
+		fighter_equipment_1 = {
 			owner = "SOV" 
-			amount = 188
+			amount = 100
 		}
 		# 5ya Dal'nyaya Bombardirovochnye Aviabrigada
-		strat_bomber_equipment_1 =  {
+		tac_bomber_equipment_1 =  {
 			owner = "SOV" 
-			amount = 24
+			amount = 100
 		}
 	}
 
@@ -1873,7 +1888,7 @@ air_wings = {
 		# 8ya VMF Aviabrigada
 		nav_bomber_equipment_1 = {
 			owner = "SOV" 
-			amount = 54
+			amount = 100
 		}
 	}
 	# VVS - BSF Aviatsya Komandovaniya -- Sevastopol
@@ -1881,7 +1896,7 @@ air_wings = {
 		# 4ya VMF Aviabrigada
 		nav_bomber_equipment_1 = {
 			owner = "SOV" 
-			amount = 54
+			amount = 100
 		}
 	}
 }

@@ -197,51 +197,7 @@ units= {
 		}					
 	}
 	
-	### SUBMARINE FORCE ###
-	fleet = {
-		name = "Submarine Base Force"			
-		naval_base = 1562 # San Diego
-		task_force = {				
-			name = "Submarine Base Force"			
-			location = 1562 # San Diego
-			ship = { name = "USS Richmond" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "CL1" } } }				
-			ship = { name = "USS Litchfield" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Basic DD1" } } }		
-		}
-		task_force = {					
-			name = "4th Submarine Squadron"			
-			location = 1562 # Pearl Harbor, HI
-			ship = { name = "USS Argonaut" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-			# 7th Submarine Division				
-			ship = { name = "USS S-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-18" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-27" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-28" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-34" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-35" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			# 16th Submarine Division			
-			ship = { name = "USS S-31" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-32" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-33" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-		}
-		task_force = {					
-			name = "6th Submarine Squadron"			
-			location = 1562 # San Diego
-			# 12th Submarine Division				
-			ship = { name = "USS Barracuda" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-			ship = { name = "USS Bass" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-			ship = { name = "USS Bonita" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-			ship = { name = "USS Narwhal" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-			ship = { name = "USS Dolphin" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-			# 13th Submarine Division				
-			ship = { name = "USS Nautilus" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-			ship = { name = "USS Cachalot" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-			ship = { name = "USS Cuttlefish" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-			ship = { name = "USS Porpoise" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-			ship = { name = "USS Pike" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-			ship = { name = "USS Shark" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "SS2" } } }
-		}					
-	}
+
 	
 	### PACIFIC RESERVES ###
 	fleet = {
@@ -291,28 +247,7 @@ units= {
 			ship = { name = "USS Upshur" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Basic DD1" } } }		
 			ship = { name = "USS Greer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Basic DD1" } } }		
 		}					
-		# ATLANTIC SUBMARINES #
-		task_force = {					
-			name = "2nd Submarine Squadron"		
-			location = 1562 # New London, CT
-			# 1st Experimental Division			
-			ship = { name = "USS S-20" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-22" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			# 4th Submarine Division			
-			ship = { name = "USS R-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-11" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-14" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			# 8th Submarine Division			
-			ship = { name = "USS S-21" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-24" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-25" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-26" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-29" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-30" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-		}	
+		
 		# ATLANTIC RESERVES #
 		task_force = {					
 			name = "Atlantic Reserve Destroyers"		# Decommissioned ships docked in Philadelphia					
@@ -333,33 +268,7 @@ units= {
 			ship = { name = "USS Noa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Basic DD1" } } }		
 			ship = { name = "USS William B Preston" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Basic DD1" } } }		
 		}					
-		task_force = {					
-			name = "Atlantic Reserve Submarines"		# Decommissioned ships docked in Philadelphia	
-			location = 1562 # Philadelphia
-			ship = { name = "USS O-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS O-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS O-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS O-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS O-7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS O-8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS O-9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS O-10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-11" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-12" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-14" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-15" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-16" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-17" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-48" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS R-20" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-		}					
+			
 	}
 	
 	### CARIBBEAN AND FOREIGN DEPLOYMENTS ###
@@ -379,17 +288,7 @@ units= {
 			ship = { name = "USS Tattnall" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Basic DD1" } } }		
 			ship = { name = "USS J Fred Talbott" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Basic DD1" } } }		
 		}
-		task_force = {					
-			name = "3rd Submarine Squadron"	
-			location = 1562 # Canal Zone
-			# 11th Submarine Division			
-			ship = { name = "USS S-42" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-45" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-46" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-47" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-		}					
+				
 	}
 	
 	##### ASIATIC FLEET #####
@@ -419,17 +318,7 @@ units= {
 			ship = { name = "USS Pillsbury" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Basic DD1" } } }		
 			ship = { name = "USS John D Ford" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Basic DD1" } } }		
 		}					
-		task_force = {					
-			name = "5th Submarine Squadron"				
-			location = 1562 # Manilla
-			# 10th Submarine Division				
-			ship = { name = "USS S-36" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-37" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-38" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-39" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-40" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-			ship = { name = "USS S-41" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "SS1" } } }
-		}					
+				
 	}
 } 
 
@@ -642,17 +531,7 @@ instant_effect = {
 		amount = 1
 	}
 	# SS: Shark class (x1) ("USS Tarpon")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "USA"
-			version_name = "SS2"
-		}
-		name = "USS Tarpon" 
-		requested_factories = 1
-		progress = 0.70
-		amount = 1
-	}
+	
 }
 
 #####################

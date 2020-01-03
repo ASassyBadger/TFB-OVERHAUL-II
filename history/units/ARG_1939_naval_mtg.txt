@@ -37,13 +37,6 @@ units= {
 			ship = { name = "ARA Misiones" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ARG version_name = "Buenos Aires Class" } } }
 			ship = { name = "ARA Santa Cruz" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ARG version_name = "Buenos Aires Class" } } }
 		}				
-		task_force = {				
-			name = "Flotilla de Submarinos"			
-			location = 12364 # Buenos Aires
-			ship = { name = "ARA Santa Fe" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ARG version_name = "Santa Fe Class" } } }
-			ship = { name = "ARA Santiago del Estero" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ARG version_name = "Santa Fe Class" } } }
-			ship = { name = "ARA Salta" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ARG version_name = "Santa Fe Class" } } }
-		}
 	}
 } 
 

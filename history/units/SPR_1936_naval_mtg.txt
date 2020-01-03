@@ -29,15 +29,7 @@ units= {
 			ship = { name = "ARE República" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "República Class" } } }
 			ship = { name = "ARE Méndez Núñez" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
 		}
-		task_force = {
-			name = "Grupo de Cádiz"
-			location = 1048  #Cádiz
-			# S103 Flotilla
-			ship = { name = "ARE B1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
-			ship = { name = "ARE B2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
-			ship = { name = "ARE B3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
-			ship = { name = "ARE B4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
-		}
+		
 	}
 		
 	fleet = {
@@ -58,19 +50,7 @@ units= {
 			ship = { name = "ARE Lepanto" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
 			ship = { name = "ARE Almirante Antequera" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
 		}
-		task_force = {
-			name = "Grupo de Cartagena"
-			location = 10024  #Cartagena/Murcia
-			# S101 Flotilla
-			ship = { name = "ARE B5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
-			ship = { name = "ARE B6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
-			ship = { name = "ARE C1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
-			ship = { name = "ARE C2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
-			ship = { name = "ARE C3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
-			ship = { name = "ARE C4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
-			ship = { name = "ARE C5" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
-			ship = { name = "ARE C6" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SPR version_name = "C Class" } } }
-		}
+	
 	}
 } 
 

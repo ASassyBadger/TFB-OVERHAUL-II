@@ -8,15 +8,7 @@
 }
 
 units = {
-	##### Liberian Frontier Force  #####
-	division = {
-		name = "Liberian Frontier Force"
-		location = 7959
-		division_template = "Infantry Brigade"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
-	}
 }
 
 

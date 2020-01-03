@@ -15,13 +15,6 @@ units= {
 			ship = { name = "NRP Vouga" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }	
 			ship = { name = "NRP Tejo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }	
 		}				
-		task_force = {				
-			name = "Flotilha Delfim"			
-			location = 11805 # Lisbon
-			ship = { name = "NRP Delfim" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR } } }		
-			ship = { name = "NRP Espadarte" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR } } }	
-			ship = { name = "NRP Golfinho" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR } } }	
-		}				
 	}
 } 
 

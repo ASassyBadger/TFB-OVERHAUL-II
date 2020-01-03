@@ -37,13 +37,7 @@ units= {
 			ship = { name = "ARA Misiones" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ARG } } }
 			ship = { name = "ARA Santa Cruz" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = ARG } } }
 		}				
-		task_force = {				
-			name = "Flotilla de Submarinos"			
-			location = 12364 # Buenos Aires
-			ship = { name = "ARA Santa Fe" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ARG } } }
-			ship = { name = "ARA Santiago del Estero" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ARG } } }
-			ship = { name = "ARA Salta" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ARG } } }
-		}
+		
 	}
 } 
 

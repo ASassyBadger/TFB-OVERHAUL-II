@@ -135,34 +135,8 @@ units = {
 			ship = { name = "Umikaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP version_name = "Fubuki Class" } } }
 			ship = { name = "Yamakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP version_name = "Fubuki Class" } } }
 		}
-		# Submarine Squadrons #
-		task_force = {
-			name = "4 Sensui Kantai"
-			location = 1092  # Hiroshima
-			# 18 Sensui Sentai
-			ship = { name = "I-53" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-54" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-55" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			# 19 Sensui Sentai
-			ship = { name = "I-56" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-57" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-58" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			# 21 Sensui Sentai		
-			ship = { name = "Ro-33" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-34" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-		}
-		task_force = {
-			name = "5 Sensui Kantai"
-			location = 1092  # Hiroshima
-			# 9 Sensui Sentai
-			ship = { name = "I-59" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-60" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-62" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			# 10 Sensui Sentai
-			ship = { name = "I-64" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-65" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-66" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-		}
+		
+		
 	}
 	
 	# Naval District Forces #
@@ -178,12 +152,7 @@ units = {
 			ship = { name = "Wakatake" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
 			ship = { name = "Kuretake" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
 			ship = { name = "Sanae" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			# Submarine detachment
-			ship = { name = "Ro-26" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-27" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-28" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-51" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-56" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
+			
 		}
 		task_force = {
 			name = "Chinkai Kantai"
@@ -304,66 +273,9 @@ units = {
 	fleet = {
 		name = "Taiheiyo Kantai"			
 		naval_base = 2489  # Truk
-		task_force = {
-			name = "1 Sensui Kantai"
-			location = 13041  #Kwajalein
-			# 1 Sensui Sentai
-			ship = { name = "I-8" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-51" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-52" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			# 2 Sensui Sentai
-			ship = { name = "I-63" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-61" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-67" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			# 3 Sensui Sentai
-			ship = { name = "Ro-60" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-61" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-62" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			# 4 Sensui Sentai
-			ship = { name = "Ro-65" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-66" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-67" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-		}
-		task_force = {
-			name = "2 Sensui Kantai"
-			location = 13041  #Kwajalein
-			# 5 Sensui Sentai
-			ship = { name = "Ro-63" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-64" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-68" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			# 6 Sensui Sentai
-			ship = { name = "Ro-57" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-58" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-59" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			# 7 Sensui Sentai
-			ship = { name = "I-1" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-2" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-3" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			# 8 Sensui Sentai
-			ship = { name = "I-4" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-5" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-6" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-			ship = { name = "I-7" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class" } } }
-		}
-		task_force = {
-			name = "3 Sensui Kantai"
-			location = 2489  # Truk
-			# 11 Sensui Sentai
-			ship = { name = "I-68" definition = submarine equipment = { submarine_2 = {amount = 1 owner = JAP} } }
-			ship = { name = "I-69" definition = submarine equipment = { submarine_2 = {amount = 1 owner = JAP} } }
-			ship = { name = "I-70" definition = submarine equipment = { submarine_2 = {amount = 1 owner = JAP} } }
-			# 12 Sensui Sentai
-			ship = { name = "I-74" definition = submarine equipment = { submarine_2 = {amount = 1 owner = JAP} } }
-			ship = { name = "I-75" definition = submarine equipment = { submarine_2 = {amount = 1 owner = JAP} } }
-			# 13 Sensui Sentai
-			ship = { name = "I-71" definition = submarine equipment = { submarine_2 = {amount = 1 owner = JAP} } }
-			ship = { name = "I-72" definition = submarine equipment = { submarine_2 = {amount = 1 owner = JAP} } }
-			ship = { name = "I-73" definition = submarine equipment = { submarine_2 = {amount = 1 owner = JAP} } }
-			# 14 Sensui Sentai
-			ship = { name = "Ro-30" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-31" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ro-32" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }
-		}
+		
+		
+	
 	}
 }
 
@@ -510,41 +422,5 @@ instant_effect = {
 			progress = 0.45
 			amount = 1
 		}		
-		# SS (x7): "I-9" "I-15" "I-16" "I-17" "I-18" "I-20" "I-22"
-		add_equipment_production = {
-			equipment = {
-				type = submarine_3
-				creator = "JAP" 
-			}
-			requested_factories = 1
-			progress = 0.7
-			amount = 2
-		}
-		add_equipment_production = {
-			equipment = {
-				type = submarine_3
-				creator = "JAP" 
-			}
-			requested_factories = 1
-			progress = 0.6
-			amount = 2
-		}
-		add_equipment_production = {
-			equipment = {
-				type = submarine_3
-				creator = "JAP" 
-			}
-			requested_factories = 1
-			progress = 0.5
-			amount = 2
-		}
-		add_equipment_production = {
-			equipment = {
-				type = submarine_3
-				creator = "JAP" 
-			}
-			requested_factories = 1
-			progress = 0.4
-			amount = 1
-		}
+		
 }
