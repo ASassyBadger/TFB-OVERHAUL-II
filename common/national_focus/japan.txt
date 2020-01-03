@@ -1273,7 +1273,7 @@ focus = {
 			537 = {
 				add_resource = {
 					type = oil
-					amount = 20
+					amount = 5
 				}
 			}
 		}
@@ -1723,37 +1723,115 @@ focus = {
 	}
 
 	focus = {
-		id = JAP_Showa_Steel
-		text = Develop_Nickel_Mines
-		icon = GFX_Nickel_Mines
+		id = JAP_expand_the_showa_steel_works
+		icon = GFX_Showa_Steel
 		prerequisite = { focus = JAP_the_manchurian_project }
-        relative_position_id = JAP_the_manchurian_project
 		x = 0
-		y = 1
-		cost = 10
-        
-		available_if_capitulated = yes
+		y = 2
+		relative_position_id = JAP_the_manchurian_project
 
+		cost = 2.9
+
+		ai_will_do = {
+			factor = 2
+		}
 		completion_reward = {
-			780 = {
+			715 = {
 				add_resource = {
 					type = steel
-					amount = 42
+					amount = 30
 				}
 			}
-			780 = {
+			MAN = { add_autonomy_ratio = {
+					value = -0.05
+				}
+				
+			}
+		}
+	}
+
+		focus = {
+		id = JAP_manchurian_industrial_development_company
+		icon = GFX_Manchuria_Industrial
+		prerequisite = { focus = JAP_expand_the_showa_steel_works }
+		x = 2
+		y = 1
+		relative_position_id = JAP_expand_the_showa_steel_works
+
+		cost = 2.9
+
+		completion_reward = {
+
+		
+			
+			715 = {
 				add_resource = {
-					type = tungsten
-					amount = 28
+					type = oil
+					amount = 10
+				}
+			}
+
+			715 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
 				}
 			}
 
 			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				technology = excavation1
-				technology = excavation2
-				technology = excavation3
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			
+			MAN = { add_autonomy_ratio = {
+					value = -0.05
+				}
+				
+			}
+		}
+	}
+
+			focus = {
+		id = JAP_Krupp_Investment
+		icon = GFX_Krupp_Invest
+		prerequisite = { focus = JAP_expand_the_showa_steel_works }
+		x = -2
+		y = 1
+		relative_position_id = JAP_expand_the_showa_steel_works
+
+		cost = 4.3
+
+		completion_reward = {
+
+			715 = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
+
+			715 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+
+	
+
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			MAN = { add_autonomy_ratio = {
+					value = -0.05
+				}
+				
 			}
 		}
 	}
