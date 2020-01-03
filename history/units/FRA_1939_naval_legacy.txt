@@ -226,17 +226,7 @@ units= {
 instant_effect = {
 
 	### Ships Under Contruction Notes ###
-	# SS: Aurore variant (x1) ("Aurore")
-	add_equipment_production = {
-		equipment = {
-			type = submarine_2
-			creator = "FRA"
-			version_name = "Aurore Class"
-		}
-		requested_factories = 1
-		progress = 0.15
-		amount = 1
-	}
+	
 	# DD: Le Hardi variant (x6) ("Le Hardi" "Fleuret" "Epée" "Casque" "Lansquenet" "Mameluk")
 	add_equipment_production = {
 		equipment = {
