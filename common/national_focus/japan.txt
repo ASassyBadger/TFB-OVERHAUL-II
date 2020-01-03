@@ -24,7 +24,7 @@ focus_tree = {
 		  126 = {is_owned_by = Jap}}
 		}
 		
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = Jap_The_Irony
 
@@ -152,7 +152,7 @@ focus = {
 		333 = {is_owned_by = Jap}
 		629 = {is_owned_by = Jap}
 		}
-		x = 13
+		x = 11
 		y = 5
 		offset = {
 			x = -5

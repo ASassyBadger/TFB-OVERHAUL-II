@@ -3,6 +3,66 @@ spriteTypes = {
 	#### Generic continuous goal icons
 
 SpriteType = {
+	name = "GFX_The_Oscar"
+	texturefile = "gfx/interface/goals/The_Oscar.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_The_Zero"
+	texturefile = "gfx/interface/goals/The_Zero.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_USA_Infa"
+	texturefile = "gfx/interface/goals/USA_Infa.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Siberian_Infa"
+	texturefile = "gfx/interface/goals/Siberian_Infa.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Setting_Sun"
+	texturefile = "gfx/interface/goals/Setting_Sun.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Rising_Sun"
+	texturefile = "gfx/interface/goals/Rising_Sun.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Nichiro_Senso"
+	texturefile = "gfx/interface/goals/Nichiro_Senso.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Manchurian_Industry"
+	texturefile = "gfx/interface/goals/Manchurian_Industry.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Krupp_Invest"
+	texturefile = "gfx/interface/goals/Krupp_Invest.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Join_Axis"
+	texturefile = "gfx/interface/goals/Join_Axis.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Jap_The_Irony"
+	texturefile = "gfx/interface/goals/Jap_The_Irony.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Showa_Steel"
+	texturefile = "gfx/interface/goals/Showa_Steel.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_The_T44"
 	texturefile = "gfx/interface/goals/The_T44.dds"			
 	}
