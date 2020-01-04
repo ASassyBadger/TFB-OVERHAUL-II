@@ -3,6 +3,11 @@ spriteTypes = {
 	#### Generic continuous goal icons
 
 SpriteType = {
+	name = "GFX_Manchuria_Railway"
+	texturefile = "gfx/interface/goals/Manchuria_Railway.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_The_Oscar"
 	texturefile = "gfx/interface/goals/The_Oscar.dds"			
 	}

@@ -51,7 +51,7 @@ JAP_Nichiro_Senso = {
 			picture = jap_hirohito
 			
 			modifier = {
-				conscription = 0.02
+				conscription = 0.01
 				
 			
 		}
@@ -71,8 +71,8 @@ JAP_Nichiro_Senso = {
 			picture = jap_hirohito
 			
 			modifier = {
-				production_speed_infrastructure_factor = 0.25
-				production_speed_air_base_factor = 0.25
+				production_speed_infrastructure_factor = 0.15
+				production_speed_air_base_factor = 0.15
 			
 		}
 }
@@ -91,8 +91,8 @@ JAP_Nichiro_Senso = {
 			picture = jap_hirohito
 			
 			modifier = {
-				production_speed_naval_base_factor = 0.25
-				production_speed_air_base_factor = 0.25
+				production_speed_naval_base_factor = 0.15
+				production_speed_air_base_factor = 0.15
 			
 		}
 }
@@ -113,7 +113,7 @@ JAP_Nichiro_Senso = {
 			modifier = {
 				industrial_capacity_factory = 0.1
 
-				supply_consumption_factor = -0.25
+				supply_consumption_factor = -0.10
 			
 		}
 }
@@ -429,8 +429,8 @@ JAP_Nichiro_Senso = {
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.05
-				industrial_capacity_factory = 0.05
-				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = 0.00
 			}
 		}
 
@@ -455,7 +455,7 @@ JAP_Nichiro_Senso = {
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.00
 			}
 		}
 
@@ -477,8 +477,8 @@ JAP_Nichiro_Senso = {
 				stability_factor = -0.1
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
-				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = 0.05
+				production_speed_dockyard_factor = 0.15
+				consumer_goods_factor = 0.00
 			}
 		}
 
@@ -1417,72 +1417,8 @@ JAP_Nichiro_Senso = {
 	
 	
 	political_advisor = {	
-		sanzo_nosaka = {
-			
-			available = {
-				if = {
-					limit = {
-						has_DLC = "Waking the Tiger"
-					}
-					has_completed_focus = JAP_the_unthinkable_option
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			allowed = {
-				original_tag = "JAP"
-			}
-			
 
-			
-			traits = { communist_revolutionary }
 
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}	
-			
-		kijuro_shidehara = {
-			
-			available = {
-				if = {
-					limit = {
-						has_DLC = "Waking the Tiger"
-					}
-					has_completed_focus = JAP_strengthen_civilian_government
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			
-			allowed = {
-				original_tag = "JAP"
-			}
-			
-
-			
-			traits = { democratic_reformer }
-
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
 		
 		kingoro_hashimoto = {
 			
