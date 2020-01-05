@@ -1059,6 +1059,7 @@ focus = {
 		id = JAP_guide_the_zaibatsus
 		icon = GFX_focus_jap_zaibatsu
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
+		mutually_exclusive = { focus = JAP_challenge_the_zaibatsus }
 		x = 1
 		y = 1
 		relative_position_id = JAP_purge_the_kodoha_faction
@@ -1604,6 +1605,7 @@ focus = {
 		id = JAP_challenge_the_zaibatsus
 		icon = GFX_focus_jap_zaibatsu
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
+		mutually_exclusive = { focus = JAP_guide_the_zaibatsus }
 		x = 3
 		y = 1
 		relative_position_id = JAP_purge_the_kodoha_faction

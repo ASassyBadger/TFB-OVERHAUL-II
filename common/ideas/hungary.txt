@@ -360,24 +360,7 @@ ideas = {
 
 		}
 
-		HUN_gusztav_gratz = {
-
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = HUN
-				has_dlc = "Death or Dishonor"
-			}
-			
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			
-			traits = { staunch_monarchist }
-		}
+		
 
 		HUN_kalman_daranyi = {
 
@@ -399,42 +382,6 @@ ideas = {
 			}
 			
 			traits = { silent_workhorse }
-		}
-
-		HUN_laszlo_rajk = {
-
-			picture = generic_communist_revolutionary_western_european_2d
-			
-			allowed = {
-				original_tag = HUN
-			}
-			
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			
-			traits = { communist_revolutionary }
-		}
-
-		HUN_jozsef_szell = {
-
-			picture = generic_democratic_reformer_western_european_2d
-			
-			allowed = {
-				original_tag = HUN
-			}
-			
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			
-			traits = { democratic_reformer }
 		}
 
 		HUN_gyula_gombos_de_jakfa = {
