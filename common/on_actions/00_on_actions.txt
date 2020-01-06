@@ -897,6 +897,11 @@ on_actions = {
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
+
+			SPR = { 
+				country_event = { id = spain.10 days = 197 } 
+			}
+
 			GER = {
 				if = {
 					limit = {

@@ -253,10 +253,10 @@
 	### NORTH AND SOUTH AMERICAS ###			
 	fleet = {
 		name = "Gibraltar Force"
-		naval_base = 4135 # Gib
+		naval_base = 13218 # Gib
 		task_force = {				
 			name = "America and West Indies Fleet"
-			location = 4135  # Bermuda
+			location = 13218  # Bermuda
 			ship = { name = "HMS Berwick" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS York" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
 			ship = { name = "HMS Orion" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }	
