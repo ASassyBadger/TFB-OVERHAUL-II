@@ -48,7 +48,7 @@ equipments = {
 					ship_medium_battery
 					ship_secondaries
 					ship_airplane_launcher
-					ship_mine_layer
+
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -59,7 +59,7 @@ equipments = {
 					ship_light_battery
 					ship_medium_battery
 					ship_airplane_launcher
-					ship_mine_layer
+			
 					ship_depth_charge
 				}
 			}
@@ -172,14 +172,14 @@ equipments = {
 					ship_medium_battery
 					ship_secondaries
 					ship_airplane_launcher
-					ship_mine_layer
+
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_mine_layer
+
 					ship_anti_air
 					ship_airplane_launcher
 					ship_depth_charge
@@ -242,7 +242,7 @@ equipments = {
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_mine_layer
+
 					ship_anti_air
 					ship_airplane_launcher
 					ship_depth_charge
@@ -253,7 +253,7 @@ equipments = {
 			rear_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_mine_layer
+
 					ship_anti_air
 					ship_airplane_launcher
 					ship_depth_charge
@@ -317,7 +317,7 @@ equipments = {
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_mine_layer
+	
 					ship_anti_air
 					ship_airplane_launcher
 					ship_depth_charge
@@ -582,7 +582,7 @@ equipments = {
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_mine_layer
+	
 					ship_anti_air
 					ship_airplane_launcher
 					ship_torpedo
@@ -593,7 +593,7 @@ equipments = {
 			rear_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_mine_layer
+	
 					ship_anti_air
 					ship_airplane_launcher
 					ship_depth_charge
@@ -948,7 +948,7 @@ equipments = {
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_mine_layer
+	
 					ship_anti_air
 					ship_airplane_launcher
 					ship_torpedo
@@ -1047,7 +1047,7 @@ equipments = {
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_mine_layer
+
 					ship_anti_air
 					ship_airplane_launcher
 					ship_torpedo

@@ -717,49 +717,7 @@ guiTypes = {
 		}
 	}
 
-	containerWindowType = {
-		name = "air_mission_entry_11"
-		position = {x=0 y=0}
-		size = { width=47 height=34 }
-		Orientation = upper_left
-
-		buttonType = {
-			name = "btn"
-			position = {x=0 y=0}	
-			spriteType = "GFX_strategicair_mission_btn_bg"
-			clicksound = "air_mission_select"
-			# shortcut = "j"
-		}		
-		iconType = {
-			name = "icon"
-			position = {x=6 y=2}	
-			spriteType = "GFX_strategicair_mission_types"
-			frame = 12
-			alwaystransparent = yes
-		}
-	}
-
-	containerWindowType = {
-		name = "air_mission_entry_12"
-		position = {x=0 y=0}
-		size = { width=47 height=34 }
-		Orientation = upper_left
-
-		buttonType = {
-			name = "btn"
-			position = {x=0 y=0}	
-			spriteType = "GFX_strategicair_mission_btn_bg"
-			clicksound = "air_mission_select"
-			# shortcut = "j"
-		}		
-		iconType = {
-			name = "icon"
-			position = {x=3 y=2}	
-			spriteType = "GFX_strategicair_mission_types"
-			frame = 13
-			alwaystransparent = yes
-		}
-	}
+	
 
 	containerWindowType = {
 		name = "air_selection_view"
