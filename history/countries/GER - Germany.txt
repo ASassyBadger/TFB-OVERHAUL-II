@@ -40,8 +40,6 @@ if = {
 		not = { has_dlc = "Man the Guns" }
 	}
 	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
 		early_destroyer = 1
 		basic_destroyer = 1
 		early_light_cruiser = 1
@@ -60,8 +58,6 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
@@ -70,8 +66,6 @@ if = {
 		basic_ship_hull_heavy = 1
 		panzerschiffe = 1
 		pre_dreadnoughts = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
 		mtg_transport = 1
 		basic_torpedo = 1
 		improved_ship_torpedo_launcher = 1
@@ -880,29 +874,8 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	create_equipment_variant = {
-		name = "Type II Class"
-		type = ship_hull_submarine_1
-		name_group = GER_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Type VII Class"
-		type = ship_hull_submarine_2
-		name_group = GER_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-	}
+
+
 	create_equipment_variant = {
 		name = "Königsberg Class"
 		type = ship_hull_cruiser_1
@@ -1063,18 +1036,7 @@ create_equipment_variant = {
 		limit = {
 			not = { has_dlc = "Man the Guns" }
 		}
-		# Submarines #
-		create_equipment_variant = {
-			name = "Type VIIA"
-			type = submarine_2
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 1
-				sub_engine_upgrade = 1
-				sub_stealth_upgrade = 1
-				sub_torpedo_upgrade = 1
-			}
-		}
+
 		# Destroyer #
 		create_equipment_variant = {
 			name = "Zerstörer 1936"

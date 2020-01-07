@@ -21,7 +21,6 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_submarine = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
 		early_heavy_cruiser = 1
@@ -32,10 +31,7 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
 		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_battery = 1
@@ -200,16 +196,7 @@ create_corps_commander = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
-	create_equipment_variant = {
-		name = "Capitán O'Brien Class"
-		type = submarine_1
-		upgrades = {
-			ship_reliability_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
-	}
+
 	create_equipment_variant = {
 		name = "Serrano Class"
 		type = destroyer_1
@@ -223,30 +210,7 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "H1 Class"				
-		type = ship_hull_submarine_1
-		name_group = CHL_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Capitán O'Brien Class"				
-		type = ship_hull_submarine_1
-		name_group = CHL_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_torpedo_sub_1
-		}
-	}
+
 	# Destroyers #
 	create_equipment_variant = {
 		name = "Almirante Lynch Class"				

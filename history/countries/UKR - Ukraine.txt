@@ -34,8 +34,6 @@ if = {
 		not = { has_dlc = "Man the Guns" }
 	}
 	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
 		early_heavy_cruiser = 1
@@ -49,8 +47,6 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
@@ -60,7 +56,10 @@ if = {
 	}
 }
 
-set_popularities = {	democratic = 20	fascism = 30	communism = 50
+set_popularities = {
+	democratic = 20
+	fascism = 30
+	communism = 50
 }
 
 create_country_leader = {

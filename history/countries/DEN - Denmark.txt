@@ -26,7 +26,6 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_submarine = 1
 		early_destroyer = 1
 		early_heavy_cruiser = 1
 		transport = 1
@@ -35,10 +34,7 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
 		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
 		basic_secondary_battery = 1
@@ -111,18 +107,8 @@ if = {
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_submarine = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_ship_hull_submarine = 1
-		}
-	}
+
+
 }
 
 
@@ -214,18 +200,7 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Rota Class"								# represents Rota and Daphne classes
-		type = ship_hull_submarine_1
-		name_group = DEN_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-	}
+
 	# Heavy Cruisers #
 	create_equipment_variant = {
 		name = "Herluf Trolle Class"				
@@ -274,17 +249,6 @@ if = {
 	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "Havmanden Class"				
-			type = ship_hull_submarine_1
-			name_group = DEN_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = empty
-			}
-		}
+
 	}
 }

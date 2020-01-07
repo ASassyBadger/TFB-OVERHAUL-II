@@ -27,7 +27,6 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_submarine = 1
 		early_destroyer = 1
 		basic_destroyer = 1
 		early_light_cruiser = 1
@@ -41,11 +40,8 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		basic_naval_mines = 1
-		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
@@ -230,16 +226,7 @@ create_field_marshal = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
-	create_equipment_variant = {
-		name = "C Class"
-		type = submarine_1
-		upgrades = {
-			ship_reliability_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
-	}
+
 	create_equipment_variant = {
 		name = "Príncipe Alfonso Class"
 		type = light_cruiser_1
@@ -253,30 +240,6 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "B Class"				
-		type = ship_hull_submarine_1
-		parent_version = 0
-		name_group = SPR_SS_HISTORICAL
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "C Class"				
-		type = ship_hull_submarine_2
-		name_group = SPR_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = empty
-		}
-	}
 	# Destroyers #
 	create_equipment_variant = {
 		name = "Alsedo Class"				
@@ -429,19 +392,7 @@ if = {
 	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "General Mola Class"							# purchased from Italy
-			type = ship_hull_submarine_2
-			name_group = SPR_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = ship_torpedo_sub_1
-			}
-			obsolete = yes
-		}
+
 		# Destroyers #
 		create_equipment_variant = {
 			name = "Melilla Class"								# purchased from Italy				

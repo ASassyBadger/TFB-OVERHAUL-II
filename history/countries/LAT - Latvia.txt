@@ -22,19 +22,7 @@ set_technology = {
 	infantry_weapons1 = 1
 	early_fighter = 1
 }
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		submarine_mine_laying = 1
-		early_ship_hull_submarine = 1
-	}
-}
+
 
 set_research_slots = 3
 
@@ -178,19 +166,4 @@ create_corps_commander = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Ronis Class"								
-		type = ship_hull_submarine_1
-		name_group = LAT_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-	}
 }

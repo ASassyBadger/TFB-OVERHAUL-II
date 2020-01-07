@@ -37,7 +37,6 @@ if = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_submarine = 1
 		basic_destroyer = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
@@ -49,11 +48,7 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
 		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		basic_battery = 1
@@ -182,17 +177,10 @@ if = {
 		concentrated_industry2 = 1
 		concentrated_industry3 = 1
 	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		basic_submarine = 1
-		improved_light_cruiser = 1
-		}
-	}
+
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
-			improved_ship_hull_submarine = 1
 			basic_ship_hull_light = 1
 			basic_light_battery = 1
 			basic_medium_battery = 1
@@ -351,58 +339,10 @@ create_navy_leader = {
 
 ### VARIANTS ###
 # 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-	create_equipment_variant = {
-		name = "K-XIV Class"
-		type = submarine_1
-		upgrades = {
-			ship_reliability_upgrade = 2
-			sub_engine_upgrade = 2
-			sub_stealth_upgrade = 2
-			sub_torpedo_upgrade = 2
-		}
-	}
-}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {			# represents K II-X, O8 subs
-		name = "K-III Class"
-		type = ship_hull_submarine_1
-		name_group = HOL_SS_KCLASS
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "O9 Class"					# represents O9-15, K XI-XIII subs
-		type = ship_hull_submarine_1
-		name_group = HOL_SS_OCLASS
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "K-XIV Class"				# represents K XIV-XVIII, O16 subs
-		type = ship_hull_submarine_2
-		name_group = HOL_SS_KCLASS
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = ship_torpedo_sub_2
-		}
-	}
+
 	# Destroyers #
 	create_equipment_variant = {
 		name = "Van Ghent Class"			
@@ -519,19 +459,6 @@ if = {
 	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "O19 Class"								# represents O19-24 subs
-			type = ship_hull_submarine_3
-			name_group = HOL_SS_OCLASS
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_3
-				front_1_custom_slot = ship_mine_layer_sub
-				rear_1_custom_slot = ship_torpedo_sub_2
-			}
-		}
 		# Destroyers #
 		create_equipment_variant = {
 			name = "Gerard Callenburgh Class"					

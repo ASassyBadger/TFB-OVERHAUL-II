@@ -21,7 +21,6 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_submarine = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
 		early_heavy_cruiser = 1
@@ -35,8 +34,6 @@ if = {
 		basic_naval_mines = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_battery = 1
@@ -277,18 +274,8 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Santa Fe Class"				
-		type = ship_hull_submarine_1
-		name_group = ARG_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = ship_torpedo_sub_1
-		}
-	}
+
+	
 	# Destroyers #
 	create_equipment_variant = {
 		name = "Catamarca Class"				# represents Catamarca, La Plata Class		

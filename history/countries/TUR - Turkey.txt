@@ -31,7 +31,7 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_submarine = 1
+
 		early_destroyer = 1
 		early_light_cruiser = 1
 		early_battleship = 1
@@ -43,11 +43,10 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		basic_naval_mines = 1
-		submarine_mine_laying = 1
+
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
+
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_battery = 1
@@ -120,12 +119,7 @@ if = {
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_submarine = 1
-		}
-	}
+
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
@@ -304,54 +298,12 @@ if = {
 			ship_anti_air_upgrade = 1
 		}
 	}
-	create_equipment_variant = {
-		name = "Dumlupinar Class"
-		type = submarine_1
-		upgrades = {
-			ship_reliability_upgrade = 2
-			sub_engine_upgrade = 2
-			sub_stealth_upgrade = 2
-			sub_torpedo_upgrade = 2
-		}
-	}
+
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Birinci Inönü Class"				
-		type = ship_hull_submarine_1
-		name_group = TUR_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Dumlupinar Class"				
-		type = ship_hull_submarine_2
-		name_group = TUR_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = ship_mine_layer_sub
-		}
-	}
-	create_equipment_variant = {
-		name = "Sakarya Class"								# represents Sakarya and Gur classes
-		type = ship_hull_submarine_1
-		name_group = TUR_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = empty
-		}
-	}
+
+
 	# Destroyers #
 	create_equipment_variant = {
 		name = "Peyk Class"									# large torpedo boats		
@@ -435,17 +387,6 @@ if = {
 	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "Saldiray Class"				
-			type = ship_hull_submarine_2
-			name_group = TUR_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = empty
-			}
-		}
+
 	}
 }

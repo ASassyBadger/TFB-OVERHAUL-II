@@ -100,7 +100,7 @@ equipments = {
 		air_agility = 5
 		air_attack = 50
 		air_defence = 25
-		air_bombing = 30
+		air_bombing = 20
 		
 		# build_cost_ic = 36
 	}
@@ -118,7 +118,7 @@ equipments = {
 		air_agility = 7
 		air_attack = 100
 		air_defence = 35
-		air_bombing = 45
+		air_bombing = 30
 		
 		build_cost_ic = 91
 		resources = {
@@ -141,7 +141,7 @@ equipments = {
 		air_agility = 10
 		air_attack = 150
 		air_defence = 50
-		air_bombing = 60
+		air_bombing = 40
 		
 		build_cost_ic = 92
 		resources = {

@@ -57,7 +57,6 @@ if = {
 		not = { has_dlc = "Man the Guns" }
 	}
 	set_technology = {
-		early_submarine = 1
 		early_destroyer = 1
 		basic_destroyer = 1
 		early_light_cruiser = 1
@@ -73,11 +72,8 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
@@ -287,8 +283,6 @@ create_country_leader = {
 			not = { has_dlc = "Man the Guns"}
 		}
 		set_technology = {
-			basic_submarine = 1
-			improved_submarine = 1
 			improved_destroyer = 1
 			basic_light_cruiser = 1
 			improved_light_cruiser = 1
@@ -303,8 +297,6 @@ create_country_leader = {
 			has_dlc = "Man the Guns"
 		}
 		set_technology = {
-			basic_ship_hull_submarine = 1
-			improved_ship_hull_submarine = 1
 			improved_ship_hull_light = 1
 			improved_ship_hull_cruiser = 1
 			basic_ship_hull_heavy = 1
@@ -803,28 +795,7 @@ create_navy_leader = {
 
 ### Ship Variants ###
 
-#create_equipment_variant = {
-#	name = "O/P/R Class"
-#	type = submarine_1
-#	upgrades = {
-#		ship_reliability_upgrade = 1
-#		sub_engine_upgrade = 1
-#		sub_stealth_upgrade = 1
-#		sub_torpedo_upgrade = 1
-#	}
-#}
-#
-#create_equipment_variant = {
-#	name = "S Class"
-#	type = submarine_1
-#	upgrades = {
-#		ship_reliability_upgrade = 2
-#		sub_engine_upgrade = 2
-#		sub_stealth_upgrade =2
-#		sub_torpedo_upgrade = 2
-#	}
-#}
-#
+
 #create_equipment_variant = {
 #	name = "A/B/C/D Class"
 #	type = destroyer_1
@@ -915,29 +886,7 @@ create_navy_leader = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Variants ###
-	# Submarines #
-	create_equipment_variant = {
-		name = "O/P/R Class"
-		type = submarine_1
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 3
-			sub_engine_upgrade = 2
-			sub_stealth_upgrade = 2
-			sub_torpedo_upgrade = 3
-		}
-	}
-	create_equipment_variant = {
-		name = "S Class"
-		type = submarine_1
-		parent_version = 1
-		upgrades = {
-			ship_reliability_upgrade = 2
-			sub_engine_upgrade = 0
-			sub_stealth_upgrade = 2
-			sub_torpedo_upgrade = 3
-		}
-	}
+
 	# Destroyers #
 	create_equipment_variant = {
 		name = "A/B/C/D Class"
@@ -1025,29 +974,7 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	### Variants ###
-	# Submarines #
-	create_equipment_variant = {
-		name = "O/P/R Class"
-		type = ship_hull_submarine_1
-		name_group = ENG_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "S Class"
-		type = ship_hull_submarine_1
-		name_group = ENG_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_torpedo_sub_1
-		}
-	}
+
 	# Destroyers #
 	create_equipment_variant = {
 		name = "A/B/C/D Class"
@@ -1617,38 +1544,6 @@ if = {
 				rear_1_custom_slot = ship_heavy_battery_3
 			}
 		}
-		create_equipment_variant = {
-			name = "T Class"
-			type = ship_hull_submarine_2
-			name_group = ENG_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = empty
-			}
-		}
-		create_equipment_variant = {
-			name = "Grampus Class"
-			type = ship_hull_submarine_2
-			name_group = ENG_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = ship_mine_layer_sub
-			}
-		}
-		create_equipment_variant = {
-			name = "U Class"
-			type = ship_hull_submarine_1
-			name_group = ENG_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = empty
-			}
-		}
+
 	}
 }
