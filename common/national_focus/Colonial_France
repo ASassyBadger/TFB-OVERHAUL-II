@@ -266,6 +266,11 @@ focus_tree = {
 				}
 			}
 
+				swap_ideas = {
+				remove_idea = Trained_Strength
+				add_idea = Free_French_Forces
+			}
+
 		}
 	}
 
@@ -642,10 +647,6 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = growing_economy
 				add_idea = Stable_Economy
-			}
-			swap_ideas = {
-				remove_idea = Trained_Strength
-				add_idea = Free_French_Forces
 			}
 		}
 	}

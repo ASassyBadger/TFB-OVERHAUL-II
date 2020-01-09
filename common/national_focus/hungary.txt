@@ -1609,7 +1609,6 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				technology = fighter3
 			}
 		}
 	}
@@ -2110,10 +2109,18 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = HUN_develop_tanks
-				ahead_reduction = 2
+				bonus = 1
 				uses = 1
-				category = armor
+				name = mech_army_bonus
+				technology = basic_heavy_tank
+				technology = improved_heavy_tank
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				name = mech_army_bonus
+				technology = basic_medium_tank
+				technology = improved_medium_tank
 			}
 		}
 	}
@@ -2730,50 +2737,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HUN_submarines
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = HUN_reform }
-		x = 2
-		y = 3
-		relative_position_id = HUN_naval_warfare
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			navy_experience = 15
-			add_tech_bonus = {
-				name = HUN_submarines
-				bonus = 3.0
-				uses = 1
-				category = ss_tech
-			}
-
-		}
-	}
-
-
-	focus = {
 		id = HUN_carriers
 		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = HUN_submarines }
-		x = 2
-		y = 4
-		relative_position_id = HUN_naval_warfare
+		prerequisite = { focus = HUN_reform }
+		x = 1
+		y = 1
+		relative_position_id = HUN_reform
 
 		cost = 10
 

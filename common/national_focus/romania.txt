@@ -319,48 +319,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ROM_demand_transnistria
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = ROM_join_axis }
-		x = 1
-		y = 5
-		relative_position_id = ROM_trade_treaty_with_germany
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			192 = {
-				is_owned_by = SOV
-				is_controlled_by = SOV
-			}
-			198 = {
-				is_owned_by = SOV
-				is_controlled_by = SOV
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = SOV
-				generator = { 192 198 }
-			}
-		}
-	}
 
 	
 
@@ -2655,12 +2613,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_the_maresal
-				bonus = 1.0
-				ahead_reduction = 2
+				add_tech_bonus = {
+				bonus = 2
 				uses = 1
-				category = cat_heavy_armor
+				name = mech_army_bonus
+				technology = improved_heavy_tank
 			}
 		}
 	}
@@ -2868,41 +2825,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ROM_modern_submarines
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = ROM_modern_destroyers }
-		x = 0
-		y = 2
-		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_modern_submarines
-				bonus = 1.0
-				uses = 1
-				category = ss_tech
-			}
-		}
-	}
 
 	focus = {
 		id = ROM_black_sea_dominance
