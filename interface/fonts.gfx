@@ -5,6 +5,12 @@ bitmapfonts = {
 	#Small debug font
 
 	bitmapfont = {
+		name = "Chanticleer_0"
+		path = "gfx/fonts/Chanticleer_0"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
 		name = "TFBFont_0"
 		path = "gfx/fonts/TFBFont_0"
 		color = 0xffffffff
