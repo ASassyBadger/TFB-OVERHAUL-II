@@ -260,7 +260,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 9
 		}
@@ -607,6 +607,7 @@ focus = {
 		x = 0
 		y = 2
 		relative_position_id = GER_Logistical_Reform
+		available = { has_war_with = SOV }
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -691,7 +692,7 @@ focus = {
 		x = 0
 		y = 2
 		relative_position_id = GER_kdf_wagen
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -928,7 +929,7 @@ focus = {
 		x = 1
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -963,7 +964,7 @@ focus = {
 		x = -1
 		y = 1
 		relative_position_id = GER_tactical_air_effort
-		cost = 10
+		cost = 1.5
 		ai_will_do = {
 			factor = 0.1
 		}
@@ -1018,7 +1019,7 @@ focus = {
 		x = -1
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1397,7 +1398,8 @@ focus = {
 		prerequisite = { focus = GER_anti_comitern_pact }
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 549999 }
+			date > 1938.1.1
+			#has_army_manpower = { size > 549999 }
 		}
 		cancel = {
 			OR = {
@@ -1559,7 +1561,6 @@ focus = {
 			has_completed_focus = GER_soviet_treaty 
 			is_puppet = no
 			has_government = fascism
-			has_army_manpower = { size > 849999 } #ca 90 div
 			SOV = {
 				NOT = { has_war_with = GER }
 				country_exists = SOV
@@ -1601,7 +1602,6 @@ focus = {
 		will_lead_to_war_with = POL
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 949999 } #100 div
 			#Make custom trigger tooltip here
 			85 = {
 				owner = {
@@ -1879,7 +1879,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = GER_danzig_or_war
-		cost = 4
+		cost = 1.5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -2013,7 +2013,6 @@ focus = {
 		will_lead_to_war_with = FRA
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 749999 } #80 div
 			NOT = {
 				AND = {
 					CZE = { is_in_faction_with = GER }
@@ -2224,7 +2223,7 @@ focus = {
 		x = -2
 		y = 1
 		relative_position_id = GER_demand_sudetenland
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
