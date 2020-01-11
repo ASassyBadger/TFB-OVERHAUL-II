@@ -771,30 +771,14 @@ country = {
 	tank_manufacturer = {
 
 		designer = yes
-	
-		# TECHNOLOGY
-		renault_fra = {
-		
-			picture = renault
-						
-			allowed = {
-				original_tag = CFR
-			}
-						
-			research_bonus = {
-				armor = 0.15
-			}
-			
 
-			traits = { heavy_tank_manufacturer }
-		}
 	
-		FRA_AMX = {
+		CFR_AMX = {
 		
 			picture = generic_tank_manufacturer_2
 
 			available = {
-				has_completed_focus = FRA_army_reform
+				
 			}
 						
 			allowed = {

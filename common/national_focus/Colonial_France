@@ -257,12 +257,13 @@ focus_tree = {
 			set_cosmetic_tag = FRA_FREE
 
 			create_country_leader = {
-				name = "Charles De Gaulle"
-				desc = "POLITICS_MICHAEL_I_DESC"
-				picture = Portrait_France_Charles_De_Gaulle			
+				name = "Charles de Gaulle"
+				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+				picture = "Portrait_France_Charles_De_Gaulle.dds"
 				expire = "1965.1.1"
-				ideology = socialism
+				ideology = conservatism
 				traits = {
+					
 				}
 			}
 
@@ -319,6 +320,7 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 8
+					province = 6039
 					instant_build = yes
 				}
 			}
@@ -326,6 +328,7 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 8
+					province = 12975
 					instant_build = yes
 				}
 			}
@@ -333,6 +336,7 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 4
+					province = 1909
 					instant_build = yes
 				}
 			}
@@ -340,6 +344,7 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 2
+					province = 5222
 					instant_build = yes
 				}
 			}
@@ -347,6 +352,7 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 2
+					province = 4268
 					instant_build = yes
 				}
 			}
@@ -354,6 +360,7 @@ focus_tree = {
 				add_building_construction = {
 					type = naval_base
 					level = 2
+					province = 10906
 					instant_build = yes
 				}
 			}
@@ -579,7 +586,7 @@ focus_tree = {
         relative_position_id = CFR_Alone_In_Dark
         x = -1
 		y = 1
-		cost = 10
+		cost = 5
         
 		available_if_capitulated = yes
 
@@ -620,12 +627,11 @@ focus_tree = {
         relative_position_id = CFR_Alone_In_Dark
         x = 1
 		y = 1
-		cost = 10
+		cost = 5
         
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
 			ENG = { add_to_faction = CFR }
 		}
 	}
@@ -664,12 +670,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		772 = {
 			add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
 					level = 8
 					instant_build = yes
 				}
+			}
 		}
 	}
 

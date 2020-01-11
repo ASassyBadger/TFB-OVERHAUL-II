@@ -2,6 +2,40 @@ ideas = {
 
 	country = {
 
+		SPA_stop_trying_to_steal_my_tungsten = {
+
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+			trade_laws_cost_factor = 1000.00
+			}
+		}
+
+		SPA_stop_trying_to_be_communist = {
+
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				fascism_drift = 0.99
+			}
+		}
+
 		SPA_recovering_from_civil_war = {
 
 			picture = FRA_matignon_agreements
