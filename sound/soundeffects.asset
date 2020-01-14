@@ -2389,7 +2389,7 @@ soundeffect =
 	name = "alert_players_lagging_behind_sound"
 	volume = 0.40
 	sounds = {
-		sound = "unable_manpower_alert"
+		sound = "confirm_dog"
 	}
 	max_audible = 1
 	max_audible_behaviour = fail
