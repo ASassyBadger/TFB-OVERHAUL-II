@@ -81,6 +81,7 @@ ideas = {
 				consumer_goods_factor = 0.35
 				production_speed_industrial_complex_factor = -0.3
 				production_speed_arms_factory_factor = -0.3
+				production_speed_dockyard_factor = -0.3
 				conversion_cost_civ_to_mil_factor= 0.3
 				conversion_cost_mil_to_civ_factor = 0.3
 				max_fuel_factor = -0.25
@@ -95,7 +96,7 @@ ideas = {
 		low_economic_mobilisation = {
 			
 			available = {
-				has_war_support > 0.15
+				threat > 0.05
 				if = {
 					limit = {
 						original_tag = HUN
@@ -130,6 +131,7 @@ ideas = {
 				consumer_goods_factor = 0.3
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
 				fuel_gain_factor = -0.25
 			}
 			
@@ -159,7 +161,7 @@ ideas = {
 		partial_economic_mobilisation = {
 			
 			available = {
-				has_war_support > 0.25
+				threat > 0.15
 
 				if = {
 					limit = {
@@ -187,6 +189,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.25
 				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.1
 				conversion_cost_mil_to_civ_factor = -0.1
 				fuel_gain_factor = -0.1
@@ -218,7 +221,7 @@ ideas = {
 			
 			
 			available = {
-				has_war_support > 0.5
+				threat > 0.45 
 				OR = {
 					has_government = fascism
 					has_government = communism
@@ -228,7 +231,7 @@ ideas = {
 						any_enemy_country = {
 							ic_ratio = { 
 								tag = ROOT 
-								ratio > 0.4
+								ratio > 0.40
 							}
 						}
 					}
@@ -257,6 +260,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.2
 				production_speed_arms_factory_factor = 0.2
+				production_speed_dockyard_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
 			}
@@ -287,6 +291,7 @@ ideas = {
 			
 			
 			available = {
+				date > 1941.1.1 
 				has_war = yes
 				has_war_support > 0.8
 				any_enemy_country = {
@@ -310,16 +315,6 @@ ideas = {
 					}
 					has_war_support > 0.9
 					congress_high_support_trigger = yes
-				}
-			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
 				}
 			}
 			ai_will_do = {
@@ -380,6 +375,7 @@ ideas = {
 				consumer_goods_factor = 0.10
 				conscription = -0.03
 				production_speed_arms_factory_factor = 0.3
+				production_speed_dockyard_factor = 0.30
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
 			}
