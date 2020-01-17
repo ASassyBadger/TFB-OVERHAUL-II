@@ -288,8 +288,8 @@ NCountry = {
 	AIR_VOLUNTEER_PLANES_LIMIT = 0.2,				-- Ratio for volunteer planes available for sending in relation to sender air force
 	AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 0.1,		-- Ratio for volunteer planes available for sending in relation to receiver air base capacity
 	ATTACHE_XP_SHARE = 0.05,							-- Country received xp from attaches
-	SPECIAL_FORCES_CAP_BASE = 0.00,					-- Max ammount of special forces battalions is total number of non-special forces battalions multiplied by this and modified by a country modifier
-	SPECIAL_FORCES_CAP_MIN = 150,					-- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
+	SPECIAL_FORCES_CAP_BASE = 0.20,					-- Max ammount of special forces battalions is total number of non-special forces battalions multiplied by this and modified by a country modifier
+	SPECIAL_FORCES_CAP_MIN = 300,					-- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
 	DAYS_OF_WAR_BEFORE_SURRENDER = 7,				-- Number of days a war has to have existed before anyone can surrender in it
 	
 	FUEL_LEASE_CONVOY_RATIO = 0.0005,				-- num convoys needed per fuel land lease 
@@ -474,9 +474,9 @@ NMilitary = {
 	RECON_SKILL_IMPACT = 7, -- how many skillpoints is a recon advantage worth when picking a tactic.
 
 	MAX_DIVISION_BRIGADE_WIDTH = 5,			-- Max width of regiments in division designer.
-	MAX_DIVISION_BRIGADE_HEIGHT = 7,		-- Max height of regiments in division designer.
-	MAX_DIVISION_SUPPORT_WIDTH = 1,			-- Max width of support in division designer.
-	MAX_DIVISION_SUPPORT_HEIGHT = 5,		-- Max height of support in division designer.
+	MAX_DIVISION_BRIGADE_HEIGHT = 5,		-- Max height of regiments in division designer.
+	MAX_DIVISION_SUPPORT_WIDTH = 2,			-- Max width of support in division designer.
+	MAX_DIVISION_SUPPORT_HEIGHT = 7,		-- Max height of support in division designer.
 	
 	BASE_DIVISION_BRIGADE_GROUP_COST = 0, 	--Base cost to unlock a regiment slot,
 	BASE_DIVISION_BRIGADE_CHANGE_COST = 0,	--Base cost to change a regiment column.

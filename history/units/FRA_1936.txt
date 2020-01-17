@@ -404,10 +404,6 @@ air_wings = {
 		}
 		# Groupement de Bombardment 6
 		# Groupement de Bombardment 9
-		tac_bomber_equipment_1 =  {
-			owner = "FRA" 
-			amount = 60
-		}
 	}
 
 	# Z.d'Op. Aériennes Est -- Reims
@@ -429,15 +425,7 @@ air_wings = {
 		# Groupement de Bombardment 1
 		# Groupement de Bombardment 6
 		# Groupement de Bombardment 9
-		tac_bomber_equipment_1 =  {
-			owner = "FRA" 
-			amount = 90
-		}
 		# Groupement de Bombardment d'Assault 19
-		tac_bomber_equipment_0 =  {
-			owner = "FRA" 
-			amount = 24
-		}
 	}
 
 	# Z.d'Op. Aériennes Africain -- Tunis
@@ -448,10 +436,6 @@ air_wings = {
 			amount = 48
 		}
 		# Groupement de Bombardment du Nord-Africain
-		tac_bomber_equipment_1 =  {
-			owner = "FRA" 
-			amount = 30
-		}
 	}
 
 	# Aeronautique Navale -- Cherbourg

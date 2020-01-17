@@ -52,8 +52,6 @@ country = {
 				guarantee_tension = 5.0
 				ai_badass_factor = 0.001
 				ai_get_ally_desire_factor = -500
-				political_power_factor = -5.00
-				consumer_goods_factor = 1.00
-                conscription = -5.0
+				
 	}
 }
