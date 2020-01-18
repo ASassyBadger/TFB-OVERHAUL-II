@@ -16,7 +16,7 @@ focus_tree = {
 		id =  CFR_mission_civilisatrice
 		text = mission_civilisatrice
 		icon = GFX_Mission_Civilised
-		x = 12
+		x = 13
 		y = 0
 		cost = 10
 		#ai_will_do = {
@@ -115,7 +115,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CFR_Industrial_Investment }
         relative_position_id = CFR_Industrial_Investment
-		x = -2
+		x = -3
 		y = 1
 		cost = 10
         
@@ -201,13 +201,69 @@ focus_tree = {
 		}
 	}
 
+	 focus = {
+		id = CFR_Further_Prospects
+		text = Further_Prospects
+		icon = GFX_focus_generic_tungsten
+		prerequisite = { focus = CFR_Develop_Nickel_Mines }
+        relative_position_id = CFR_Develop_Nickel_Mines
+		x = -2
+		y = 1
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			539 = {
+				add_resource = {
+					type = tungsten
+					amount = 30
+				}
+			}
+			772 = {
+				add_resource = {
+					type = tungsten
+					amount = 60
+				}
+			}
+		}
+	}
+
+		 focus = {
+		id = CFR_Rubber_Plantation
+		text = Rubber_Plantations
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = CFR_Develop_Nickel_Mines }
+        relative_position_id = CFR_Develop_Nickel_Mines
+		x = 0
+		y = 1
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			298 = {
+				add_resource = {
+					type = rubber
+					amount = 20
+				}
+			}
+			660 = {
+				add_resource = {
+					type = rubber
+					amount = 30
+				}
+			}
+		}
+	}
+
     focus = {
 		id = CFR_Improved_Living
 		text = Improved_Living
 		icon = GFX_Standar_Living
 		prerequisite = { focus = CFR_Agricultural_Boom focus = CFR_Develop_Nickel_Mines }
         relative_position_id = CFR_Agricultural_Boom
-        x = -1
+        x = 0
 		y = 2
 		cost = 10
         
@@ -218,6 +274,23 @@ focus_tree = {
 				remove_idea = divided_people
 				add_idea = Unified_people
 			}
+		}
+	}
+
+	focus = {
+		id = CFR_Further_Education
+		text = Further_Education
+		icon = GFX_focus_research
+		prerequisite = { focus =  CFR_Improved_Living }
+        relative_position_id =  CFR_Improved_Living
+        x = 0
+		y = 1
+		cost = 10
+        
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 
@@ -546,11 +619,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
 			army_experience = 100
 			swap_ideas = {
 				remove_idea = Colonial_Garrison
 				add_idea = Trained_Strength
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = land_doctrine
 			}
 		}
 	}
@@ -731,10 +808,13 @@ focus_tree = {
 
 	focus = {
 		id = CFR_Challenge_Panzer
+		available = {
+			FRA = { has_capitulated = yes }
+		}
 		text = Challenge_Panzer
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus =  CFR_Homeland_Armament }
-        relative_position_id =  CFR_Homeland_Armament
+		prerequisite = { focus =  CFR_Brazzaville_Military_Academy}
+        relative_position_id = CFR_Brazzaville_Military_Academy
         x = 0
 		y = 1
 		cost = 10
@@ -785,7 +865,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus =  CFR_Wartime_Production }
         relative_position_id =  CFR_Wartime_Production
-        x = -2
+        x = -1
 		y = 1
 		cost = 10
         
