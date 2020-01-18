@@ -324,6 +324,96 @@ political_actions = {
 		}
 	}
 
+	annex_canada = {
+		ai_will_do = { factor = 0 }
+		cost = 0	
+		visible = {
+			tag = ENG
+			CAN = { is_ai = yes }
+			country_exists = CAN
+			date > 1939.1.1
+			has_war = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = CAN transfer_troops = yes }
+			}
+		}
+	}
+
+	annex_british_raj = {
+		ai_will_do = { factor = 0 }
+		cost = 0
+		visible = {
+			tag = ENG
+			RAJ = { is_ai = yes }
+			country_exists = RAJ
+			date > 1939.1.1
+			has_war = yes			
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = RAJ transfer_troops = yes }
+			}
+		}
+	}
+
+	annex_south_africa = {
+		ai_will_do = { factor = 0 }
+		cost = 0
+		visible = {
+			tag = ENG
+			SAF = { is_ai = yes }
+			country_exists = SAF
+			date > 1939.1.1
+			has_war = yes			
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = SAF transfer_troops = yes }
+			}
+		}
+	}
+
+	annex_australia = {
+		ai_will_do = { factor = 0 }
+		cost = 0
+		visible = {
+			tag = ENG
+			AST = { is_ai = yes }
+			country_exists = AST
+			date > 1939.1.1
+			has_war = yes			
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = AST transfer_troops = yes }
+			}
+		}
+	}
+
+	annex_new_zealand_uk = {
+		ai_will_do = { factor = 0 }
+		cost = 0
+		visible = {
+			tag = ENG
+			NZL = { is_ai = yes }
+			country_exists = NZL
+			date > 1939.1.1
+			has_war = yes			
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = NZL transfer_troops = yes }
+			}
+		}
+	}
+
 	hold_fight_on_the_beaches_speech = {
 
 		icon = generic_political_discourse
@@ -917,6 +1007,8 @@ operations = {
 		}
 	}
 }
+
+
 
 ENG_enforce_the_naval_treaties = {
 

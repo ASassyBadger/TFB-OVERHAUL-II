@@ -9,6 +9,8 @@ if = {
 	}
 }
 
+
+
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.8
@@ -25,6 +27,7 @@ set_technology = {
 	paratroopers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	interwar_antitank = 1
 	gwtank = 1
 	basic_light_tank = 1  # PLACEHOLDER
 	#basic_heavy_tank = 1  # PLACEHOLDER
@@ -265,6 +268,7 @@ add_to_faction = TAN
 add_ideas = {
 	trotskyite_plot
 	home_of_revolution
+	soviet_closed_market
 }
 
 create_country_leader = {

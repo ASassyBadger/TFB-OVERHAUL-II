@@ -1,0 +1,103 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						tag = FRA 
+						NOT = { has_global_flag = fall_of_france } 
+					}
+				}
+				
+				set_global_flag = achievement_france_surrender
+				set_global_flag = fall_of_france
+				
+				if = {
+					limit = {
+						AND = {
+							ITA { NOT = { has_war_with = ENG } }
+						}
+					}
+					ITA = {
+						declare_war_on = {
+							target = CFR
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = ENG
+							type = annex_everything
+						}
+					}
+				}
+
+                GER = { declare_war_on = { target = CFR type = annex_everything } }
+				
+				## Vichy France ##
+				set_country_flag = is_vichy_france
+				EFR = {
+					diplomatic_relation = { country = GER relation = non_aggression_pact }
+					set_capital = 26
+					transfer_state = 1 #Corsica
+					transfer_state = 26 # Auvergne
+					transfer_state = 22 #Languedoc
+					transfer_state = 31 #Midi Pyrenees
+					transfer_state = 25 #Limousin
+					transfer_state = 20 #Rhone
+					transfer_state = 21 #Provence
+                    transfer_state = 735 #Savoy
+					transfer_state = 32 #Alpes
+					transfer_state = 33 #Centeral-Sud
+					transfer_state = 677 #Aleppo
+					transfer_state = 680 #Dier-az-Zur
+					transfer_state = 553 #Lebanon
+					transfer_state = 554 #Damascus
+					transfer_state = 458 #Tunisia
+                    transfer_state = 665 #Gabes
+					transfer_state = 459 #Algiers
+					transfer_state = 460 #Constantine
+					transfer_state = 461 #Casablanca
+					transfer_state = 462 #Marrakech
+					transfer_state = 513 #Tlemcen
+					transfer_state = 671 #Tonkin
+					transfer_state = 670 #Laos
+					transfer_state = 741 #Cambodia
+					transfer_state = 286 #Southern Indochina
+
+					set_politics = {
+						ruling_party = fascism
+						elections_allowed = no
+					}
+						
+					set_popularities = {
+							fascism = 70
+							democratic = 18
+							communism = 2
+							neutrality = 10
+					}
+							
+					D01 = { inherit_technology = FRA }
+					
+					every_state = {
+						limit = {
+							is_core_of = FRA
+							is_controlled_by = EFR
+						}
+						add_core_of = EFR
+					}
+					every_state = {
+						limit = {
+							NOT = {
+								is_core_of = FRA
+							}
+							is_controlled_by = EFR
+						}
+						add_claim_by  = FRA
+					}
+					28 = {
+						remove_core_of = EFR
+					}
+				}
+			}
+		}
+	}
+}

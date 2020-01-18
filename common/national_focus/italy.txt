@@ -14,25 +14,7 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1100 }
 
-	focus = {
-		id = ITA_extra_tech_slot_II
-		icon = GFX_focus_research
-		text = extra_tech_slot
-		prerequisite = { focus = ITA_greece_war_goal }
-		x = 0
-		y = 1
-		relative_position_id = ITA_greece_war_goal
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
 
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
 
 	focus = {
 		id = ITA_Roman_Empire 
@@ -58,7 +40,7 @@ focus_tree = {
 			}
 		}
 
-		x = 2
+		x = -2
 		y = 1
 		cost = 0.15
 
@@ -70,6 +52,7 @@ focus_tree = {
 		completion_reward = {
 
 		 add_ideas = italian_new_roman_empire
+		 add_research_slot = 1
 				
 		}
 	}
@@ -112,10 +95,10 @@ focus_tree = {
 				type = oil
 				amount = 30
 			}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -587,7 +570,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_extra_tech_slot
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -716,7 +699,12 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 20
+				state = 662
+			}
+			add_resource = {
+				type = rubber
+				amount = 40
 				state = 662
 			}
 			662 = {
@@ -1515,7 +1503,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		x = 15
+		x = 16
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1530,11 +1518,11 @@ focus_tree = {
 	focus = {
 		id = ITA_slovenia_dalmatia_claims
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = ITA_victoryinETH }
+		prerequisite = { focus = ITA_albania_war_goal }
 		mutually_exclusive = { focus = ITA_yugoslavia_friend }
-		x = -1
+		x = 0
 		y = 1
-		relative_position_id = ITA_victoryinETH
+		relative_position_id = ITA_albania_war_goal
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1592,6 +1580,12 @@ focus_tree = {
 				}
 			}
 
+			create_wargoal = {
+					type = take_state_focus
+					target = YUG
+					generator = { 6 }
+				}
+
 			hidden_effect = {
 				news_event = { hours = 6 id = news.192 }
 			}
@@ -1620,7 +1614,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = ITA_victoryinETH
 		cost = 4.4
@@ -1720,11 +1714,11 @@ focus_tree = {
 	focus = {
 		id = ITA_albania_war_goal
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = ITA_slovenia_dalmatia_claims focus = ITA_yugoslavia_friend }
+		prerequisite = { focus = ITA_victoryinETH }
 		will_lead_to_war_with = ALB
-		x = 2
+		x = 0
 		y = 1
-		relative_position_id = ITA_slovenia_dalmatia_claims
+		relative_position_id = ITA_victoryinETH
 		
 		available = {
 			country_exists = ALB
@@ -1769,7 +1763,7 @@ focus_tree = {
 			}
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_bulgaria_friend
 		cost = 10

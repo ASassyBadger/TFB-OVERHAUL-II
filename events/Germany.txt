@@ -687,27 +687,6 @@ country_event = {
 	}
 }
 
-# Claim Memel - Lithuania Rejects Demand
-country_event = {
-	id = germany.23
-	title = germany.23.t
-	desc = germany.23.d
-	picture = GFX_report_event_lithuania_army
-
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.23.a
-		create_wargoal = {
-			type = take_state_focus
-			target = LIT
-			generator = { 188 }
-		}
-		hidden_effect = {
-			country_event = { days = 1 id = news.20 }
-		}
-	}
-}
 
 # Japan Demands Withdrawal of Falkenhausen
 country_event = {
