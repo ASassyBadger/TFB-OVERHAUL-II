@@ -6,7 +6,7 @@ state={
 	impassable = yes
 
 	history={
-		owner = CFR
+		#owner = CFR
 		add_core_of = CFR
 		buildings = {
 			infrastructure = 1
